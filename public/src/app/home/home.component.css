@@ -1,0 +1,195 @@
+/* body {
+   background-image: url("banner1.jpg");
+   height: 781px;
+   background-color: #000;
+   opacity: 1.0;
+   border: none;
+   margin: 0;
+   padding: 0;
+} */
+/* .carousel-item {
+    position: relative;
+    display: inline;
+    -ms-flex-align: center;
+    align-items: center;
+} */
+
+.register-form .btn-primary {
+    color: white;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: -webkit-left;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+#nav-bar-content{
+    font-size: 1rem;
+    font-weight: 1000;
+    line-height: 10;
+    color: white;
+    text-align: left;
+}
+
+.about-header{
+    padding: 30px 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.about_section .about_parent{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about_section .about_parent .about_content{
+    margin-bottom: 50px;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.features .single-feature{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.features .single-feature h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feature .learn-more-feature{
+    text-align: center !important;
+    margin-bottom: 50px;
+}
+
+.btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.2;
+    border-radius: .7rem;
+    color: white;
+    background-color: black;
+    margin-bottom: 60px;
+    text-align: center !important;
+}
+
+.quote-image{
+    width: 100%;
+    height: 400px;
+    opacity: 1;
+    background-color: rgba(178, 178, 178, 0.72);
+}
+
+.quote{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.9rem !important;
+    margin-bottom: 70px;
+}
+
+.quote .single-paragraph{
+    margin-bottom: 0;
+    font-style: italic;
+    font-family: raleway;
+}
+
+.quote-paragraphs{
+    position: relative;
+}
+
+.single-paragraph{
+    width: 670px;
+    font-size: 37px;
+    margin: 0 auto;
+    line-height: 1.2;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.features-header{
+    padding: 30px 0px;
+    text-align: center !important;
+    margin-bottom: 30px;
+}
+
+.more-features2 .features-content2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features-content2{
+    text-align: center;
+    margin-left: 40px;
+}
+
+.first-features-content2{
+    margin-left: 50px;
+}
+
+.first-features-content2 h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logistic-manager{
+    text-align: center;
+    position: relative;
+}
+
+.logistic-manager .single-paragraph-holder{
+    position: absolute;
+    width: 450px;
+    bottom: -20px;
+    left: 330px;
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.gen-btn{
+    padding: 12px 40px;
+    border-radius: 50px;
+}
+
+.fleet-trucks{
+    text-align: center;
+    position: relative;
+}
+
+.fleet-trucks .fleet-paragraph{
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+}
+
+.fleet-trucks .fleet-paragraph .learn-more-feature{
+    margin-top: 50px;
+}
