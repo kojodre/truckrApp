@@ -20,25 +20,26 @@
       <div class="container-fluid">        
         <div class="menu-wrapper">
           <div id="nav-bar-wrap" class="col-md-14 nav-col">
-            <nav id="nav-bar-content" class="navbar navbar-expand-lg navbar-dark bg-dark">
-              <div class="container">
-                <a href="home.component.html">Home</a>
-                <a href="shipper.html">About </a>
-                <a href="https://jobs.lever.co/convoy">Cargo Owners</a>
-                <div id="logo" class="logo">
-                  <a href="home.component.html" rel="home"><img class="d-block"src="assets/img/homeImages/logo1.jpg" alt="Truckr" height="200"></a>
+            <nav id="nav-bar-content" class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+              <div class="register-link">
+                <div class="register-btn">
+                  <div class="btn btn-primary">
+                    <a href="/signup" class="label">Sign Up</a>
+                  </div>
+                  <div class="btn btn-primary">
+                    <a href="/signin" class="label">Sign In</a>
+                  </div>
                 </div>
-                <a href="about-us.html"> Truck Owner</a>
-                <a href="contact-us/index.html">Contact</a>
-                <a href="contact-us/index.html">FAQs</a>
-              </div>
-              <div class="col-md-2 register-form">
-                <div class="btn btn-primary">
-                  <a href="/signup" class="label">Sign Up</a>
-                </div>
-                <div class="btn btn-primary">
-                  <a href="/signin" class="label">Sign In</a>
-                </div>
+                <ul>
+                  <li><a href="home.component.html">Home</a></li>
+                  <li><a href="shipper.html">About </a></li>
+                  <li><a href="https://jobs.lever.co/convoy">Cargo Owners</a></li>
+                  <li><a href="home.component.html" rel="home"><img class="d-block"src="../assets/img/logo.png" alt="Truckr"></a></li>
+                  <li><a href="about-us.html"> Truck Owner</a></li>
+                  <li><a href="contact-us/index.html">Contact</a></li>
+                  <li><a href="contact-us/index.html">FAQs</a></li>
+                </ul>
+                
               </div>
             </nav>
           </div>
@@ -55,13 +56,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/img/homeImages/banner1.jpg" alt="truckpicture">
+            <img class="d-block w-100" src="../assets/img/banner3.jpg" alt="truckpicture">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="assets/img/homeImages/banner2.jpg" alt="Second slide">
+            <img class="d-block w-100" src="../assets/img/banner2.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="assets/img/homeImages/banner3.jpg" alt="Third slide">
+            <img class="d-block w-100" src="../assets/img/banner3.jpg" alt="Third slide">
           </div>
           <div class="carousel-caption d-md-block">
             <h1>Book a Truck,</h1>
@@ -99,7 +100,7 @@
             <button class="btn btn-sm btn-outline-secondary" type="button">Learn more</button>
           </div>
           <div class="col-6">
-            <img class="d-block w-100" src="assets/img/homeImages/aboutDisplay.png" alt="Image">
+            <img class="d-block w-100" src="../assets/img/About.png" alt="Image">
           </div>
         </div>
       </div>
@@ -111,7 +112,7 @@
           <div class="row">
             <div class="features">
               <div class="single-feature">
-                <img class="d-block" src="assets/img/homeImages/tag.png" alt="Image" height="100">
+                <img class="img-feature" src="../assets/img/tag.png" alt="Image">
                 <h4>
                   Transparent Pricing
                 </h4>
@@ -120,7 +121,7 @@
                 </p>
               </div>
               <div class="single-feature">
-                <img class="d-block" src="assets/img/homeImages/Icons.png" alt="Image" height="100">
+                <img class="img-feature" src="../assets/img/Icons.png" alt="Image">
                 <h4>
                   Real-time Visibility
                 </h4>
@@ -129,7 +130,7 @@
                 </p>
               </div>
               <div class="single-feature">
-                <img class="d-block" src="assets/img/homeImages/coin.png" alt="Image" height="100">
+                <img class="img-feature" src="../assets/img/coin.png" alt="Image">
                 <h4>
                   Efficiency & Save Cost
                 </h4>
@@ -138,7 +139,7 @@
                 </p>
               </div>
               <div class="single-feature">
-                <img class="d-block" src="assets/img/homeImages/fluid.png" alt="Image" height="100">
+                <img class="img-feature" src="../assets/img/fluid.png" alt="Image">
                 <h4>
                   Fluid Execution
                 </h4>
@@ -157,7 +158,7 @@
 
     <section class="quote">
       <div class="quote-paragraphs">
-        <img class="quote-image" src="assets/img/homeImages/tires.png" width="100%">
+        <img class="quote-image" src="../assets/img/tires.png" width="100%">
         <p class="single-paragraph">
           "By injecting technology and transparency
           into logistics, you get an accelerated
@@ -171,68 +172,71 @@
       <h1 class="vendor-title"> Features </h1>
     </div>
     
-    <section class="more-features2">
-      <div class="container">
-        <div class="row features-content2">
+    <section class="card-logistic">
+      <section class="more-features">
+        <div class="container">
+          <div class="row features-content2">
             <div class="col-6">
-              <img class="d-block w-100" height="380" src="assets/img/homeImages/DesktopDisplay.png" alt="Image">
+              <img class="d-block w-100" src="../assets/img/tripHistory.jpg" alt="Image">
             </div>
             <div class="col-4 first-features-content2">
               <h4>
                 Complete control & visibility
               </h4>
-              <p class="features_content"> Get end-to-end visibility of your shipments, online. Book, manage and track your global shipments, documents, shipping
-                instructions, payments on desktop or mobile.
+              <p class="features_content"> Get end-to-end visibility of your shipments, online. Book, manage and track your global shipments, documents,
+                shipping instructions, payments on desktop or mobile.
               </p>
             </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="more-features3">
-      <div class="container">
-        <div class="row features-content3">
-          <div class="col-4 first-features-content2">
-            <h4>
+      <section class="more-features">
+        <div class="container">
+          <div class="row features-content3">
+            <div class="col-4 first-features-content2">
+              <h4>
                 Transparent Pricing
-            </h4>
-            <p class="features_content">Know exactly how much you will spend on each shipment with our detailed online quote. We give you 100% transparency, upfront.
-            No surprises.
-            </p>
-          </div>
-          <div class="col-6">
-            <img class="d-block w-100" height="380" src="assets/img/homeImages/NewOrder.jpg" alt="Image">
+              </h4>
+              <p class="features_content">Know exactly how much you will spend on each shipment with our detailed online quote. We give you 100% transparency,
+                upfront. No surprises.
+              </p>
+            </div>
+            <div class="col-6">
+              <img class="d-block w-100" src="../assets/img/Order.jpg" alt="Image">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="more-features2">
-      <div class="container">
-        <div class="row features-content2">
-          <div class="col-6">
-            <img class="d-block w-100" height="380" src="assets/img/homeImages/DesktopDisplay.png" alt="Image">
-          </div>
-          <div class="col-4 first-features-content2">
-            <h4>
+      <section class="more-features">
+        <div class="container">
+          <div class="row features-content2">
+            <div class="col-6">
+              <img class="d-block w-100" src="../assets/img/tripHistory.jpg" alt="Image">
+            </div>
+            <div class="col-4 first-features-content2">
+              <h4>
                 Real-time freight visibility
-            </h4>
-            <p class="features_content"> From pickup to delivery, monitor your argo with our advanced real-time tracking system. Get timely alerts about delays &
-            unusual waiting times.
-            </p>
+              </h4>
+              <p class="features_content"> From pickup to delivery, monitor your argo with our advanced real-time tracking system. Get timely alerts about
+                delays & unusual waiting times.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
+    
 
-    <div class="col-12 features-header">
+    <div class="col-12 features-header logistic-manager-header">
       <h1 class="vendor-title"> Are you a Logistics manager/</h1>
       <h1 class="vendor-title"> Freight forwarder?</h1>
     </div>
 
     <section class="logistic-manager">
       <div class="container">
-        <img class="logistics-manager-image" src="assets/img/homeImages/cargoOwner.png" height="700" alt="image">
+        <img class="logistics-manager-image" src="../assets/img/FreightForwarder.png" alt="image">
         <div class="single-paragraph-holder">
           <p>
             Truckr instantly gives you access to thousands of trusted and reviewed truck drivers at short notice, at a competitive rate
@@ -253,7 +257,7 @@
 
     <section class="fleet-trucks">
       <div class="container">
-        <img class="logistics-manager-image" src="assets/img/homeImages/TruckOwner.png" height="600" alt="image">
+        <img class="logistics-manager-image" src="../assets/img/TruckOwner.png" height="600" alt="image">
         <div class="fleet-paragraph">
           <p>
             Truckr helps you to get more work at great rates and get paid quickly
@@ -265,31 +269,42 @@
       </div>
     </section>
 
-    <section class="getApp-section">
-      <div class="getApp">
-        <img class="getApp-image" src="assets/img/homeImages/GetApp.jpg" width="100%" alt="image">
-        <div>
-          <div>
-            <img class="phone-image" src="assets/img/homeImages/DeliverCargo.png" height="500" alt="image">
+    <section class="get-app-section">
+      <div class="get-app">
+        <img class="get-app-image" src="../assets/img/GetAppBackground.jpg" width="100%" alt="image">
+        <div class="mobile-app-all">
+          <div class="mobile-app">
+            <img class="phone-image" src="../assets/img/DeliverCargo.png" height="500" alt="image">
           </div>
-          <div class="">
-            <h4>
+          <div class="mobile-app-info">
+            <h2>
               Get the Truckr Mobile App
-            </h4>
+            </h2>
             <p class="features_content">Get end-to-end visibility of your shipments, online. Book, manage and track your global shipments, documents,
               shipping instructions, payments on desktop or mobile.
             </p>
+            <div class="app-store-img">
+              <img class="" src="../assets/img/googlePlay.png" alt="image">
+              <img class="" src="../assets/img/googlePlay.png" alt="image">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="col-6">
-      <h4>
+    <div class="subscribe-header">
+      <h2>
         Subsrcribe to our newsletter!
-      </h4>
-      <p class="features_content">Are you interested to learn more about our product? You can simply fill our contact form.
+      </h2>
+      <p class="subscribe-subheader">Are you interested to learn more about our product? You can simply fill our contact form.
       </p>
+
+      <div class="subscribe-form">
+        <form action="">
+          <input type="text" placeholder="Enter your email address" class="subscribe-text">
+          <input type="submit" value="subscribe" class="subscribe-btn">
+        </form>
+      </div>
     </div>
 
 
@@ -298,7 +313,7 @@
         <div class="row">
           <div class="footer-content">
             <div>
-              <img class="d-block" src="assets/img/homeImages/truckrFooterLogo.png" alt="Truckr" height="150">
+              <img class="d-block" src="../assets/img/truckrFooterLogo.png" alt="Truckr" height="150">
             </div>
             <div class="col-6" id="contact">
                 <p class="address">20 Aluguntugui Street, East Legon, Accra, Ghana</p>
