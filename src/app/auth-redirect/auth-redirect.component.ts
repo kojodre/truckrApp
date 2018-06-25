@@ -3,11 +3,11 @@ import { environment } from '../../environments/environment';
 import * as firebase from 'firebase';
 
 @Component({
-  selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  selector: 'app-auth-redirect',
+  templateUrl: './auth-redirect.component.html',
+  styleUrls: ['./auth-redirect.component.css']
 })
-export class UserComponent implements OnInit {
+export class AuthRedirectComponent implements OnInit {
 
   constructor() { }
 
@@ -27,15 +27,10 @@ export class UserComponent implements OnInit {
 
   // signout method
   signOut(): void {
-    firebase.auth().signOut().then(function() {
+    firebase.auth().signOut().then(function () {
       window.location.href = `${environment.corporateSiteUrl}`;
     });
   }
 
-  // Temporary isVerified Method
-  isVerified(): Boolean {
-    return false;
-  }
+
 }
-// @TODO: Create a service that takes user data and checks if they're verified so the service can be called both on 
-// signin page and user dashboard page.

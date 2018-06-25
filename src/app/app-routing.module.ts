@@ -5,6 +5,8 @@ import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
+import { AuthRedirectComponent } from './auth-redirect/auth-redirect.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -25,6 +27,10 @@ const routes: Routes = [
   {
     path: 'signin',
     component: SigninComponent
+  },
+  {
+    path: 'auth-redirect',
+    component: AuthRedirectComponent
   }
 ];
 

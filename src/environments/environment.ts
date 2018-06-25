@@ -11,7 +11,8 @@ export const environment = {
   databaseURL: config.databaseURL,
   storageBucket: config.storageBucket,
   messagingSenderId: config.messagingSenderId,
-  projectId: config.projectId
+  projectId: config.projectId,
+  corporateSiteUrl: 'http://localhost:4200'
 };
 
 /*

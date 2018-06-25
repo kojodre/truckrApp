@@ -1,0 +1,23 @@
+<div id="nav-bar-wrap" class="col-md-14 nav-col">
+<nav class="navbar  bg-light">
+  <a class="navbar-brand" href="#">
+      <img class="logo" src="/assets/img/truckrFooterLogo.png" alt="Truckr Logo">
+  </a>
+  <li class="nav-item butto">
+    <a class="nav-link" href="#" role="button"><button (click)="signOut()"> Sign Out </button></a>
+
+  </li>
+</nav>
+</div>
+  <div class="body-content">
+    <h4>Hello {{ loggedInUser }}!</h4>
+    <p>
+      Thank you for your interest to become a Truckr partner. We will get back to you shortly.
+    </p>
+
+    <p>
+      Click sign out to be redirected to the home page for more information.
+    </p>
+  </div>
+<br>
+<button (click)="signOut()"> Sign Out </button>

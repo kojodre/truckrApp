@@ -13,31 +13,24 @@ export class SignupComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('window:::', window);
-    const config = {
-      apiKey: environment.apiKey,
-      authDomain: environment.authDomain,
-      databaseURL: environment.databaseURL,
-      storageBucket: environment.storageBucket,
-      messagingSenderId: environment.messagingSenderId,
-      projectId: environment.projectId
-    };
-    firebase.initializeApp(config);
-    this.checkUser();
+    // Check for already signed in user
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        window.location.href = `${environment.corporateSiteUrl}/auth-redirect`;
+      } else {
+        this.checkUser();
+      }
+    });
   }
 
   // Check user
   checkUser(): void {
-    console.log('firebase::', firebase);
     // FirebaseUI config.
     const uiConfig = {
-      signInSuccessUrl: 'http://localhost:8080',
+      signInSuccessUrl: `${environment.corporateSiteUrl}/auth-redirect`,
       signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-        firebase.auth.GithubAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         firebase.auth.PhoneAuthProvider.PROVIDER_ID
       ],

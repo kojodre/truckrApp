@@ -1,22 +1,13 @@
-
 // Install express server
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const routes = require('./backend/routes');
-// const LocalStorage = require('node-localstorage').LocalStorage;
-// let localStorage;
-// localStorage = new LocalStorage('./scratch');
 
 const app = express();
 const router = express.Router();
 
 require('dotenv').config();
-
-// localStorage.setItem('key', JSON.stringify(process.env.apiKey));
-
-// Setup firebase
-// const firebase = require('firebase');
 
 // Serve static pages
 app.use(express.static(__dirname +'/dist/truckrTech'));

@@ -114,12 +114,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
 /* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
+/* harmony import */ var _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth-redirect/auth-redirect.component */ "./src/app/auth-redirect/auth-redirect.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -147,6 +149,10 @@ var routes = [
     {
         path: 'signin',
         component: _signin_signin_component__WEBPACK_IMPORTED_MODULE_6__["SigninComponent"]
+    },
+    {
+        path: 'auth-redirect',
+        component: _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_7__["AuthRedirectComponent"]
     }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -198,6 +204,9 @@ module.exports = "<router-outlet></router-outlet>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_2__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -205,10 +214,22 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+
+
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'app';
     }
+    AppComponent.prototype.ngOnInit = function () {
+        var config = {
+            apiKey: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiKey,
+            authDomain: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].authDomain,
+            databaseURL: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].databaseURL,
+            storageBucket: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].storageBucket,
+            messagingSenderId: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].messagingSenderId,
+            projectId: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].projectId
+        };
+        firebase__WEBPACK_IMPORTED_MODULE_2__["initializeApp"](config);
+    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
@@ -242,12 +263,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
 /* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
+/* harmony import */ var _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./auth-redirect/auth-redirect.component */ "./src/app/auth-redirect/auth-redirect.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -268,7 +291,8 @@ var AppModule = /** @class */ (function () {
                 _admin_admin_component__WEBPACK_IMPORTED_MODULE_5__["AdminComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
                 _signup_signup_component__WEBPACK_IMPORTED_MODULE_7__["SignupComponent"],
-                _signin_signin_component__WEBPACK_IMPORTED_MODULE_8__["SigninComponent"]
+                _signin_signin_component__WEBPACK_IMPORTED_MODULE_8__["SigninComponent"],
+                _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_9__["AuthRedirectComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -279,6 +303,92 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth-redirect/auth-redirect.component.css":
+/*!***********************************************************!*\
+  !*** ./src/app/auth-redirect/auth-redirect.component.css ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n.d-block{\n    width: 180px;\n}\n\n.custom-navbar{\n    background-color: black !important;\n    /* position: absolute; */\n    z-index: 1;\n    width: 100%;\n}"
+
+/***/ }),
+
+/***/ "./src/app/auth-redirect/auth-redirect.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/auth-redirect/auth-redirect.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"nav-bar-wrap\" class=\"col-md-14 nav-col\">\n  <nav id=\"nav-bar-content\" class=\"navbar navbar-expand-lg navbar-dark bg-dark custom-navbar\">\n    <div class=\"register-link\">\n      <ul>\n        <li><a href=\"home.component.html\">HOME</a></li>\n        <li><a href=\"shipper.html\">ABOUT </a></li>\n        <li><a href=\"#\">CARGO OWNERS</a></li>\n        <li><a href=\"home.component.html\" rel=\"home\"><img class=\"d-block\"src=\"../assets/img/logo.png\" alt=\"Truckr\"></a></li>\n        <li><a href=\"about-us.html\"> TRUCK OWNERS</a></li>\n        <li><a href=\"contact-us/index.html\">CONTACT</a></li>\n        <li><a href=\"contact-us/index.html\">FAQs</a></li>\n      </ul>\n    </div>\n  </nav>\n</div>\n<div>\n  <h4>Hello {{ loggedInUser }}!</h4>\n  <p>\n    Thank you for your interest to become a Truckr partner. We will get back to you shortly.\n  </p>\n\n  <p>\n    Click sign out to be redirected to the home page.\n  </p>\n</div>\n<br>\n<button (click)=\"signOut()\"> Sign Out </button>"
+
+/***/ }),
+
+/***/ "./src/app/auth-redirect/auth-redirect.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/auth-redirect/auth-redirect.component.ts ***!
+  \**********************************************************/
+/*! exports provided: AuthRedirectComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthRedirectComponent", function() { return AuthRedirectComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_2__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AuthRedirectComponent = /** @class */ (function () {
+    function AuthRedirectComponent() {
+    }
+    AuthRedirectComponent.prototype.ngOnInit = function () {
+        // let loggedInUser;
+        // Ensure only signed in users access this page
+        // Check for already signed in user
+        firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]().onAuthStateChanged(function (user) {
+            if (user) {
+                console.log(user);
+                // User is authenticated
+            }
+            else {
+                window.location.href = "" + _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl;
+            }
+        });
+    };
+    // signout method
+    AuthRedirectComponent.prototype.signOut = function () {
+        firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]().signOut().then(function () {
+            window.location.href = "" + _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl;
+        });
+    };
+    AuthRedirectComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-auth-redirect',
+            template: __webpack_require__(/*! ./auth-redirect.component.html */ "./src/app/auth-redirect/auth-redirect.component.html"),
+            styles: [__webpack_require__(/*! ./auth-redirect.component.css */ "./src/app/auth-redirect/auth-redirect.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AuthRedirectComponent);
+    return AuthRedirectComponent;
 }());
 
 
@@ -366,7 +476,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-light bg-light\">\n  <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"/assets/img/homeImages/truckrFooterLogo.png\" width=\"30\" height=\"30\" alt=\"\">\n    </a>\n  <li class=\"nav-item dropdown\">\n    <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Sign In</a>\n    <div class=\"dropdown-menu\">\n      <a class=\"dropdown-item\" href=\"#\">Driver</a>\n      <a class=\"dropdown-item\" href=\"#\">Truck Owner</a>\n    </div>\n  </li>\n</nav>\n\n<div class=\"dropdown-menu\">\n  <div>\n    <h4>Cargo Owner Sign In</h4>\n    <p> By signing up, I agree to Truckrs privacy & terms.</p>\n    <button type=\"button\" class=\"btn btn-primary\">Sign Up with Facebook</button>\n    <p>OR</p>\n  </div>\n  <form class=\"px-4 py-3\">\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormEmail1\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"exampleDropdownFormEmail1\" placeholder=\"email@example.com\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormPassword1\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"exampleDropdownFormPassword1\" placeholder=\"Password\">\n    </div>\n    <div class=\"form-group\">\n      <p>Forgot Password?</p>\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Sign In</button>\n  </form>\n</div>\n<div class=\"dropdown-divider\">\n  <a class=\"dropdown-item\" href=\"#\">Don't have an account? Sign Up</a>\n</div>\n\n<footer>\n  <ul>\n    <li>\n      <a>Help</a>\n      <a>Privacy</a>\n      <a>Terms</a>\n    </li>\n  </ul>\n  <div class=\"footer-copyright\">\n    <div class=\"copyright\"> ©2018 <span>Truckr Technoligies All rights reserved. </span></div>\n  </div>\n</footer>"
+module.exports = "<nav class=\"navbar navbar-light bg-light\">\n  <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"/assets/img/homeImages/truckrFooterLogo.png\" width=\"30\" height=\"30\" alt=\"\">\n    </a>\n  <li class=\"nav-item dropdown\">\n    <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Sign In</a>\n    <div class=\"dropdown-menu\">\n      <a class=\"dropdown-item\" href=\"#\">Driver</a>\n      <a class=\"dropdown-item\" href=\"#\">Truck Owner</a>\n    </div>\n  </li>\n</nav>\n\n<div class=\"form-body\">\n  <div>\n    <h4>Cargo Owner Sign In</h4>\n    <p> By signing up, I agree to Truckrs privacy & terms.</p>\n    <button type=\"button\" class=\"btn btn-primary\">Sign Up with Facebook</button>\n    <p>OR</p>\n  </div>\n  <form class=\"px-4 py-3\">\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormEmai1\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"exampleDropdownFormEmai1\" placeholder=\"email@example.com\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormPassword1\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"exampleDropdownFormPassword1\" placeholder=\"Password\">\n    </div>\n    <div class=\"form-group\">\n      <p>Forgot Password?</p>\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Sign In</button>\n  </form>\n</div>\n<div class=\"dropdown-divider\">\n  <a class=\"dropdown-item\" href=\"#\">Don't have an account? Sign Up</a>\n</div>\n\n<footer>\n  <ul>\n    <li>\n      <a>Help</a>\n      <a>Privacy</a>\n      <a>Terms</a>\n    </li>\n  </ul>\n  <div class=\"footer-copyright\">\n    <div class=\"copyright\"> ©2018 <span>Truckr Technoligies All rights reserved. </span></div>\n  </div>\n</footer>"
 
 /***/ }),
 
@@ -395,6 +505,10 @@ var SigninComponent = /** @class */ (function () {
     function SigninComponent() {
     }
     SigninComponent.prototype.ngOnInit = function () {
+    };
+    // Temporary isVerified Method
+    SigninComponent.prototype.isVerified = function () {
+        return false;
     };
     SigninComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -429,7 +543,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-light bg-light\">\n  <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"/assets/img/homeImages/truckrFooterLogo.png\" width=\"30\" height=\"30\" alt=\"\">\n    </a>\n  <li class=\"nav-item dropdown\">\n    <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Sign Up</a>\n    <div class=\"dropdown-menu\">\n      <a class=\"dropdown-item\" href=\"#\">Driver</a>\n      <a class=\"dropdown-item\" href=\"#\">Truck Owner</a>\n      <a class=\"dropdown-item\" href=\"#\">Cargo Owner</a>\n    </div>\n  </li>\n</nav>\n<div id=\"firebaseui-auth-container\"> </div>\n<div class=\"dropdown-menu\">\n  <div>\n    <h4>Cargo Owner Sign Up</h4>\n    <p> By signing up, I agree to Truckrs privacy & terms.</p>\n    <button type=\"button\" class=\"btn btn-primary\">Sign Up with Facebook</button>\n    <p>OR</p>\n  </div>\n  <form name=\"signupForm\" (submit)=\"signIn()\" class=\"px-4 py-3\">\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormEmail1\">First Name</label>\n      <input type=\"email\" class=\"form-control\" id=\"exampleDropdownFormEmail1\" placeholder=\"First Name\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormEmail1\">Last Name</label>\n      <input type=\"email\" class=\"form-control\" id=\"exampleDropdownFormEmail1\" placeholder=\"Last Name\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormEmail1\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"exampleDropdownFormEmail1\" placeholder=\"email@example.com\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormPassword1\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"exampleDropdownFormPassword1\" placeholder=\"Password\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"exampleDropdownFormEmail1\">Phone Number</label>\n      <input type=\"email\" class=\"form-control\" id=\"exampleDropdownFormEmail1\" placeholder=\"Phone Number\">\n      <p>we'll send a verification code via sms to confirm your mobile number.</p>\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Sign Up</button>\n  </form>\n</div>\n<div class=\"dropdown-divider\">\n  <a class=\"dropdown-item\" href=\"#\">Have an account? Sign in</a>\n</div>\n\n<footer>\n  <ul>\n    <li>\n      <a>Help</a>\n      <a>Privacy</a>\n      <a>Terms</a>\n    </li>\n  </ul>\n  <div class=\"footer-copyright\">\n    <div class=\"copyright\"> ©2018 <span>Truckr Technoligies All rights reserved. </span></div>\n  </div>\n</footer>"
+module.exports = "<nav class=\"navbar navbar-light bg-light\">\n  <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"/assets/img/homeImages/truckrFooterLogo.png\" width=\"30\" height=\"30\" alt=\"\">\n    </a>\n  <li class=\"nav-item dropdown\">\n    <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Sign Up</a>\n    <div class=\"dropdown-menu\">\n      <a class=\"dropdown-item\" href=\"#\">Driver</a>\n      <a class=\"dropdown-item\" href=\"#\">Truck Owner</a>\n      <a class=\"dropdown-item\" href=\"#\">Cargo Owner</a>\n    </div>\n  </li>\n</nav>\n<div id=\"firebaseui-auth-container\"></div>\n<div class=\"dropdown-menu\">\n  <div>\n    <h4>Cargo Owner Sign Up</h4>\n    <p> By signing up, I agree to Truckrs privacy & terms.</p>\n    <button type=\"button\" class=\"btn btn-primary\">Sign Up with Facebook</button>\n    <p>OR</p>\n  </div>\n  <form name=\"signupForm\" (submit)=\"signIn()\" class=\"px-4 py-3\">\n    <div class=\"form-group\">\n      <label for=\"firstName\">First Name</label>\n      <input type=\"name\" class=\"form-control\" id=\"firstName\" placeholder=\"First Name\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"lastName\">Last Name</label>\n      <input type=\"name\" class=\"form-control\" id=\"lastName\" placeholder=\"Last Name\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"DropdownFormEmai1\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"DropdownFormEmai1\" placeholder=\"email@example.com\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"DropdownFormPassword1\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"DropdownFormPassword1\" placeholder=\"Password\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"DropdownFormPhone\">Phone Number</label>\n      <input type=\"phone\" class=\"form-control\" id=\"DropdownFormPhone\" placeholder=\"Phone Number\">\n      <p>we'll send a verification code via sms to confirm your mobile number.</p>\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Sign Up</button>\n  </form>\n</div>\n<div class=\"dropdown-divider\">\n  <a class=\"dropdown-item\" href=\"#\">Have an account? Sign in</a>\n</div>\n\n<footer>\n  <ul>\n    <li>\n      <a>Help</a>\n      <a>Privacy</a>\n      <a>Terms</a>\n    </li>\n  </ul>\n  <div class=\"footer-copyright\">\n    <div class=\"copyright\"> ©2018 <span>Truckr Technoligies All rights reserved. </span></div>\n  </div>\n</footer>"
 
 /***/ }),
 
@@ -466,30 +580,28 @@ var SignupComponent = /** @class */ (function () {
     function SignupComponent() {
     }
     SignupComponent.prototype.ngOnInit = function () {
-        console.log('window:::', window);
-        var config = {
-            apiKey: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiKey,
-            authDomain: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].authDomain,
-            databaseURL: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].databaseURL,
-            storageBucket: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].storageBucket,
-            messagingSenderId: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].messagingSenderId,
-            projectId: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].projectId
-        };
-        firebase__WEBPACK_IMPORTED_MODULE_2__["initializeApp"](config);
-        this.checkUser();
+        var _this = this;
+        // Check for already signed in user
+        firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]().onAuthStateChanged(function (user) {
+            if (user) {
+                window.location.href = _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl + "/auth-redirect";
+            }
+            else {
+                _this.checkUser();
+            }
+        });
     };
     // Check user
     SignupComponent.prototype.checkUser = function () {
-        console.log('firebase::', firebase__WEBPACK_IMPORTED_MODULE_2__);
         // FirebaseUI config.
         var uiConfig = {
-            signInSuccessUrl: 'http://localhost:8080',
+            signInSuccessUrl: _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl + "/auth-redirect",
             signInOptions: [
                 // Leave the lines as is for the providers you want to offer your users.
                 firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].GoogleAuthProvider.PROVIDER_ID,
-                firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].FacebookAuthProvider.PROVIDER_ID,
-                firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].TwitterAuthProvider.PROVIDER_ID,
-                firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].GithubAuthProvider.PROVIDER_ID,
+                // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+                // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+                // firebase.auth.GithubAuthProvider.PROVIDER_ID,
                 firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].EmailAuthProvider.PROVIDER_ID,
                 firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].PhoneAuthProvider.PROVIDER_ID
             ],
@@ -538,7 +650,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  user works!\n</p>\n"
+module.exports = "<h4>Hi {{ loggedInUser }}!</h4>\n<p>\n  user works! click sign out and redirect to homepage!\n</p>\n<br>\n<button (click)=\"signOut()\"> Sign Out </button>\n"
 
 /***/ }),
 
@@ -553,6 +665,9 @@ module.exports = "<p>\n  user works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserComponent", function() { return UserComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_2__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -563,10 +678,34 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var UserComponent = /** @class */ (function () {
     function UserComponent() {
     }
     UserComponent.prototype.ngOnInit = function () {
+        // let loggedInUser;
+        // Ensure only signed in users access this page
+        // Check for already signed in user
+        firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]().onAuthStateChanged(function (user) {
+            if (user) {
+                console.log(user);
+                // User is authenticated
+            }
+            else {
+                window.location.href = "" + _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl;
+            }
+        });
+    };
+    // signout method
+    UserComponent.prototype.signOut = function () {
+        firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]().signOut().then(function () {
+            window.location.href = "" + _environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl;
+        });
+    };
+    // Temporary isVerified Method
+    UserComponent.prototype.isVerified = function () {
+        return false;
     };
     UserComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -579,6 +718,8 @@ var UserComponent = /** @class */ (function () {
     return UserComponent;
 }());
 
+// @TODO: Create a service that takes user data and checks if they're verified so the service can be called both on 
+// signin page and user dashboard page.
 
 
 /***/ }),
@@ -601,7 +742,8 @@ var environment = {
     databaseURL: config.databaseURL,
     storageBucket: config.storageBucket,
     messagingSenderId: config.messagingSenderId,
-    projectId: config.projectId
+    projectId: config.projectId,
+    corporateSiteUrl: 'http://localhost:8080'
 };
 /*
  * In development mode, to ignore zone related error stack frames such as
