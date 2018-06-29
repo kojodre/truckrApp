@@ -9,5 +9,5 @@ export const environment = {
   storageBucket: config.storageBucket,
   messagingSenderId: config.messagingSenderId,
   projectId: config.projectId,
-  corporateSiteUrl: 'www.truckrtech.com'
+  corporateSiteUrl: 'http://www.truckrtech.com'
 };

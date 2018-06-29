@@ -15,14 +15,14 @@ export class AuthRedirectComponent implements OnInit {
     // let loggedInUser;
     // Ensure only signed in users access this page
     // Check for already signed in user
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        console.log(user);
-        // User is authenticated
-      } else {
-        window.location.href = `${environment.corporateSiteUrl}`;
-      }
-    });
+    // firebase.auth().onAuthStateChanged(function (user) {
+    //   if (user) {
+    //     console.log(user);
+    //     // User is authenticated
+    //   } else {
+    //     window.location.href = `${environment.corporateSiteUrl}`;
+    //   }
+    // });
   }
 
   // signout method
