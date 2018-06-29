@@ -8,6 +8,7 @@ const authRoute = (router) => {
     // Signup  Route
     router.route('/signup')
         .post(authController.signUp);
+
 }
 
 module.exports = authRoute;
