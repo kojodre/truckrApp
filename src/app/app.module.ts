@@ -31,6 +31,8 @@ import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { FooterComponent } from './dashboard/footer/footer.component';
 import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 import { ContentComponent } from './dashboard/content/content.component';
+import { AboutPageComponent } from './home/about-page/about-page.component';
+import { CargoOwnerComponent } from './home/cargo-owner/cargo-owner.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { ContentComponent } from './dashboard/content/content.component';
     NavbarComponent,
     FooterComponent,
     SidebarComponent,
-    ContentComponent
+    ContentComponent,
+    AboutPageComponent,
+    CargoOwnerComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './dashboard/user/user.component';
 import { HomeComponent } from './home/home.component';
+import { AboutPageComponent } from './home/about-page/about-page.component';
+import { CargoOwnerComponent } from './home/cargo-owner/cargo-owner.component';
+
 import { SignupComponent } from './accounts/signup/signup.component';
 import { SigninComponent } from './accounts/signin/signin.component';
 import { AuthRedirectComponent } from './auth-redirect/auth-redirect.component';
@@ -26,6 +29,14 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'about-page',
+    component: AboutPageComponent
+  },
+  {
+    path: 'cargo-owner',
+    component: CargoOwnerComponent
   },
   {
     path: 'signup',
