@@ -5,7 +5,9 @@ import { UserComponent } from './dashboard/user/user.component';
 import { HomeComponent } from './home/home.component';
 import { AboutPageComponent } from './home/about-page/about-page.component';
 import { CargoOwnerComponent } from './home/cargo-owner/cargo-owner.component';
-
+import { TransportersComponent } from './home/transporters/transporters.component';
+import { ContactComponent } from './home/contact/contact.component';
+import { FaqsComponent } from './home/faqs/faqs.component';
 import { SignupComponent } from './accounts/signup/signup.component';
 import { SigninComponent } from './accounts/signin/signin.component';
 import { AuthRedirectComponent } from './auth-redirect/auth-redirect.component';
@@ -37,6 +39,18 @@ const routes: Routes = [
   {
     path: 'cargo-owner',
     component: CargoOwnerComponent
+  },
+  {
+    path: 'transporters',
+    component: TransportersComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'faqs',
+    component: FaqsComponent
   },
   {
     path: 'signup',

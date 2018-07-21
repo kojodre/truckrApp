@@ -33,6 +33,9 @@ import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 import { ContentComponent } from './dashboard/content/content.component';
 import { AboutPageComponent } from './home/about-page/about-page.component';
 import { CargoOwnerComponent } from './home/cargo-owner/cargo-owner.component';
+import { TransportersComponent } from './home/transporters/transporters.component';
+import { ContactComponent } from './home/contact/contact.component';
+import { FaqsComponent } from './home/faqs/faqs.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { CargoOwnerComponent } from './home/cargo-owner/cargo-owner.component';
     SidebarComponent,
     ContentComponent,
     AboutPageComponent,
-    CargoOwnerComponent
+    CargoOwnerComponent,
+    TransportersComponent,
+    ContactComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,
