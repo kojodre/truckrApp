@@ -621,9 +621,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/amaka/newtruckr/node_modules/firebaseui/dist/firebaseui.css */"./node_modules/firebaseui/dist/firebaseui.css");
-__webpack_require__(/*! /home/amaka/newtruckr/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-module.exports = __webpack_require__(/*! /home/amaka/newtruckr/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /home/amaka/truckrApp/node_modules/firebaseui/dist/firebaseui.css */"./node_modules/firebaseui/dist/firebaseui.css");
+__webpack_require__(/*! /home/amaka/truckrApp/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+module.exports = __webpack_require__(/*! /home/amaka/truckrApp/src/styles.css */"./src/styles.css");
 
 
 /***/ })
