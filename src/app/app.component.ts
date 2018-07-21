@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
       projectId: environment.projectId
     };
     firebase.initializeApp(config);
-    console.log('isLoggedIn::', firebase.auth().currentUser);
   }
   // title = 'app';
 }

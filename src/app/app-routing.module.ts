@@ -23,6 +23,7 @@ import { NewRequestComponent } from './dashboard/new-request/new-request.compone
 import { ContentComponent } from './dashboard/content/content.component';
 
 
+
 const routes: Routes = [
   {
     path: '',
@@ -51,6 +52,7 @@ const routes: Routes = [
   {
     path: 'faqs',
     component: FaqsComponent
+
   },
   {
     path: 'signup',
@@ -63,6 +65,7 @@ const routes: Routes = [
   {
     path: 'auth-redirect',
     component: AuthRedirectComponent
+
   },
   {
     path: 'dashboard',
