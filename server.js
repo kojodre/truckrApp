@@ -10,7 +10,7 @@ const router = express.Router();
 require('dotenv').config();
 
 // Serve static pages
-app.use(express.static(__dirname +'/dist/truckrTech'));
+app.use(express.static(__dirname +'/dist/truckrApp'));
 
 // setup body parser
 app.use(bodyParser.urlencoded({ extended: true }));
