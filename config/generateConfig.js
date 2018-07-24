@@ -12,5 +12,5 @@ let config = {
     projectId: process.env.projectId
 };
 
-export const config = JSON.stringify(config, null, 2);
+// export const config = JSON.stringify(config, null, 2);
 fs.writeFileSync(configFile, config);
