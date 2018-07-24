@@ -23,7 +23,7 @@ routes(router);
 app.use('/api', router);
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/truckrTech/index.html'))
+    res.sendFile(path.join(__dirname + '/dist/truckrApp/index.html'))
 });
 
 const port = process.env.PORT || 8080;

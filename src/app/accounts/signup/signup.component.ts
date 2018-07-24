@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment';
+import { environment, firebaseConfig } from '../../../environments/environment.prod';
 import * as firebase from 'firebase';
 import * as firebaseui from 'firebaseui';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -9,38 +10,27 @@ import * as firebaseui from 'firebaseui';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
-  constructor() { }
-  newUserEmail: any;
-  newUserPassword: any;
+  corporateUrl = '';
+  constructor(private route: Router) {
+    // this.corporateUrl = firebaseConfig.corporateSiteUrl;
+  }
 
   ngOnInit() {
     // Check for already signed in user
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        window.location.href = `${environment.corporateSiteUrl}/auth-redirect`;
+        // window.location.href = `${firebaseConfig.corporateSiteUrl}/auth-redirect`;
+        this.route.navigate(['/auth-redirect']);
       } else {
         this.checkUser();
       }
     });
-
-   // Ensure only signed in users access this page
-    // Check for already signed in user
-    // firebase.auth().onAuthStateChanged(function (user) {
-    //  if (user) {
-    //    console.log('user' + user);
-    //    // User is authenticated
-    //    } else {
-    //    // window.location.href = `${environment.corporateSiteUrl}/signup`;
-    //    }
-    //  });
   }
 
   // Check user
   checkUser(): void {
     // FirebaseUI config.
     const uiConfig = {
-      signInSuccessUrl: `${environment.corporateSiteUrl}/auth-redirect`,
       signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -52,21 +42,14 @@ export class SignupComponent implements OnInit {
     };
 
     // Initialize the FirebaseUI Widget using Firebase.
-    const ui = new firebaseui.auth.AuthUI(firebase.auth());
+    // const ui = new firebaseui.auth.AuthUI(firebase.auth());
     // The start method will wait until the DOM is loaded.
-    ui.start('#firebaseui-auth-container', uiConfig);
+    // ui.start('#firebaseui-auth-container', uiConfig);
   }
 
-  // signup method
-  signUp(): void {
-    console.log('signUp called::', this.newUserEmail);
-
-    firebase.auth().createUserWithEmailAndPassword(this.newUserEmail, this.newUserPassword).catch(function (error) {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
-    });
+  // signin method
+  signIn(): void {
+    console.log('signin called::');
   }
 
 }

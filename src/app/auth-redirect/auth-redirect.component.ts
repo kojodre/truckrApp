@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { environment, firebaseConfig } from '../../environments/environment.prod';
 import * as firebase from 'firebase';
 
 @Component({
@@ -28,7 +28,7 @@ export class AuthRedirectComponent implements OnInit {
   // signout method
   signOut(): void {
     firebase.auth().signOut().then(function () {
-      window.location.href = `${environment.corporateSiteUrl}`;
+      window.location.href = `${firebaseConfig.corporateSiteUrl}`;
     });
   }
 

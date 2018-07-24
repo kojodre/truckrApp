@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../environments/environment';
+import { environment, firebaseConfig } from '../environments/environment.prod';
 import * as firebase from 'firebase';
 
 @Component({
@@ -10,12 +10,12 @@ import * as firebase from 'firebase';
 export class AppComponent implements OnInit {
   ngOnInit () {
     const config = {
-      apiKey: environment.apiKey,
-      authDomain: environment.authDomain,
-      databaseURL: environment.databaseURL,
-      storageBucket: environment.storageBucket,
-      messagingSenderId: environment.messagingSenderId,
-      projectId: environment.projectId
+      apiKey: firebaseConfig.apiKey,
+      authDomain: firebaseConfig.authDomain,
+      databaseURL: firebaseConfig.databaseURL,
+      storageBucket: firebaseConfig.storageBucket,
+      messagingSenderId: firebaseConfig.messagingSenderId,
+      projectId: firebaseConfig.projectId
     };
     firebase.initializeApp(config);
   }

@@ -1,59 +1,82 @@
-<nav class="navbar  bg-light">
-  <a class="navbar-brand" href="#">
-      <img class="logo" src="/assets/img/truckrFooterLogo.png" alt="Truckr Logo">
+<nav class="navbar ">
+  <a class="navbar-brand" href="#" style="padding-right: 368px;">
+      <img class="logo" src="assets/frontend/img/img/truckrFooterLogo.png" alt="Truckr Logo">
   </a>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sign Up</a>
+    <a class="nav-link dropdown-toggle text-white " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sign Up</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Driver</a>
-      <a class="dropdown-item" href="#">Truck Owner</a>
       <a class="dropdown-item" href="#">Cargo Owner</a>
+      <a class="dropdown-item" href="#">Transporter</a>
     </div>
   </li>
 </nav>
 
 <div class="form-body">
-  <div>
-    <h4>Cargo Owner Sign Up</h4>
-    <p> By signing up, I agree to Truckrs privacy & terms.</p>
-    <div id="firebaseui-auth-container"></div>
+  <div class= "signing">
+    <h1>Cargo Owner Sign Up</h1>
+  </div>  
+  <div class="sub-signing"> 
+    By signing up, I agree to Truckr's <strong>Privacy</strong> & <strong>Terms.</strong>
   </div>
-  <div>
-    <p>OR</p>
+  <div id="firebaseui-auth-container"></div>
+
+  <span class="article">
+    <span class="text">OR</span>
+  </span>
+
+  <div class="wrap-input100 validate-input" data-validate="First Name is required">
+    <input class="input100" type="text" name="name" placeholder="First Name">
+    <span class="focus-input100-1"></span>
+    <span class="focus-input100-2"></span>
   </div>
-  <form name="signupForm" (submit)="signUp()" class="px-4 py-3">
-    <div class="form-group">
-      <input type="name" class="form-control" id="firstName" placeholder="First Name">
-    </div>
-    <div class="form-group">
-      <input type="name" class="form-control" id="lastName" placeholder="Last Name">
-    </div>
-    <div class="form-group">
-      <input name="newUserEmail" type="email" class="form-control" [(ngModel)]='newUserEmail' id="DropdownFormEmai1" placeholder="email@example.com">
-    </div>
-    <div class="form-group">
-      <input name="newUserPassword" type="password" class="form-control" [(ngModel)]='newUserPassword' id="DropdownFormPassword1" placeholder="Password">
-    </div>
-    <div class="form-group">
-      <input type="phone" class="form-control" id="DropdownFormPhone" placeholder="Phone Number">
-      <p>we'll send a verification code via sms to confirm your mobile number.</p>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign Up</button>
-  </form>
-</div>
-<div class="dropdown-divider">
-  <a class="dropdown-item" href="#">Have an account? Sign in</a>
+
+  <div class="wrap-input100 validate-input" data-validate="Last Name is required">
+      <input class="input100" type="text" name="name" placeholder="Last Name">
+      <span class="focus-input100-1"></span>
+      <span class="focus-input100-2"></span>
+  </div>
+
+  <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+    <input class="input100" type="text" name="email" placeholder="Email">
+    <span class="focus-input100-1"></span>
+    <span class="focus-input100-2"></span>
+  </div>
+
+  <div class="wrap-input100 validate-input" data-validate="Password is required">
+      <input class="input100" type="password" name="password" placeholder="Password">
+      <span class="focus-input100-1"></span>
+      <span class="focus-input100-2"></span>
+  </div>
+
+  <div class="wrap-input100 validate-input" data-validate="This field is required">
+      <input autocomplete="off" class="input100" type="password" name="password" placeholder="Confirm Password">
+      <span class="focus-input100-1"></span>
+      <span class="focus-input100-2"></span>
+  </div>
+
+  <div class="wrap-input100 validate-input" data-validate="Mobile Number is required">
+      <input class="input100" type="tel" name="number" placeholder="Mobile Number">
+      <span class="focus-input100-1"></span>
+      <span class="focus-input100-2"></span>
+  </div>
+
+  <div class="container-contact100-form-btn">
+    <button class="contact100-form-btn">
+      <a href="auth-redirect.component.html"> Sign Up </a>
+    </button>
+  </div>
+
+  <div class="form-after text-center">
+    <p>
+      Have an account?
+      <a href="/signin"><strong>Sign In</strong> </a>
+    </p>
+  </div>
 </div>
 
 <footer>
-  <ul>
-    <li>
-      <a>Help</a>
-      <a>Privacy</a>
-      <a>Terms</a>
-    </li>
-  </ul>
-  <div class="footer-copyright">
-    <div class="copyright"> ©2018 <span>Truckr Technoligies All rights reserved. </span></div>
+  <div class="footer-copyright ">
+    <div class="copyright"> 
+      ©2018 <span>Truckr Technoligies All rights reserved. </span></div>
   </div>
 </footer>

@@ -1,15 +1,16 @@
 declare function require(name: string);
-const config = require('../../config/config.json');
+// config = require('../../config/config.json');
 
 export const environment = {
-  production: true,
-   firebaseConfig: {
-    apiKey: config.apiKey,
-    authDomain: config.authDomain,
-    databaseURL: config.databaseURL,
-    storageBucket: config.storageBucket,
-    messagingSenderId: config.messagingSenderId,
-    projectId: config.projectId,
-    corporateSiteUrl: 'http://www.truckrtech.com'
-  }
+  production: true
+};
+
+export const firebaseConfig = {
+  apiKey: 'AIzaSyBt_vL5iC2hLK9Ss5kc8Uqh9wZyN8rwOrg',
+  authDomain: 'truckrtech.firebaseapp.com',
+  databaseURL: 'https://truckrtech.firebaseio.com',
+  storageBucket: 'truckrtech.appspot.com',
+  messagingSenderId: '713985223854',
+  projectId: 'truckrtech',
+  corporateSiteUrl: 'http://www.truckrtech.com'
 };
