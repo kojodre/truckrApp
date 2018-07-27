@@ -87,7 +87,7 @@ img{
     left: 0;
     right: 0;
     height: 1px;
-    background: #D2D2D2;
+    background: #5F5C5C;
     z-index: 1;
     content: ' ';
 }
@@ -123,7 +123,7 @@ a {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #3D3B3B;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -148,7 +148,7 @@ p {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #383636;
 	margin: 0px;
 }
 
@@ -287,7 +287,7 @@ iframe {
   width: 100%;
   position: relative;
   background-color: #fff;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #696767;
   margin-bottom: 17px;
 }
 
@@ -445,7 +445,7 @@ input.input100 {
   position: absolute;
   width: 22px;
   height: 22px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #807C7C;
   background: #fff;
   left: 0;
   top: 50%;

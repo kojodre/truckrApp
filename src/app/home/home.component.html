@@ -1,369 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
 
-    <head>
-        <!-- <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Truckr &mdash; List and book trucks on the go</title>
-        <meta name="Truckr" content="truckr home page details">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,700,900' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="assets/frontend/css/style.min.css">
-        <link rel="stylesheet" href="assets/frontend/css/main.css">
-        <link rel="icon" type="image/png" href="assets/frontend/contact/images/icons/logo_icons/favicon.ico"/>
-        <link rel="stylesheet" type="text/css" href="assets/frontend/contact/vendor/animate/animate.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
-    </head>
-
-    <body class="site-body">
-            <header id="header" class="site-header" role="navigation">
-                <div class="container-fluid">
-                    <div class="menu-wrapper">
-                        <div id="nav-bar-wrap" class="col-md-14 nav-col">
-                            <nav id="nav-bar-content" class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
-                            <div class="register-link">
-                                <div class="register-btn">
-                                    <div class="btn smoothscroll new-btn">
-                                        <a href="/signup" class="label" style="
-                                        color:  black;
-                                    ">SIGN UP</a>
-                                    </div>
-                                    <div class="btn btn-default geni-btn">
-                                        <a href="/signin" class="label">SIGN IN</a>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li><a href="/">HOME</a></li>
-                                    <li><a href="/about-page">ABOUT </a></li>
-                                    <li><a href="/cargo-owner">CARGO OWNERS</a></li>
-                                    <li><a href="/"><img class="d-block" src="assets/frontend/img/img/logo.png" alt="Truckr"></a></li>
-                                    <li><a href="/transporters"> TRANSPORTERS</a></li>
-                                    <li><a href="/contact">CONTACT</a></li>
-                                    <li><a href="/faqs">FAQs</a></li>
-                                </ul>
+<body class="site-body">
+    <header id="header" class="site-header" role="navigation">
+        <div class="container-fluid">
+            <div class="menu-wrapper">
+                <div id="nav-bar-wrap" class="col-md-14 nav-col">
+                    <nav id="nav-bar-content" class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+                    <div class="register-link">
+                        <div class="register-btn">
+                            <div class="btn smoothscroll new-btn">
+                                <a href="/signup" class="label" style="color:  black;">SIGN UP</a>
                             </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>
-
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="assets/frontend/img/img/banner1.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="assets/frontend/img/img/banner2.jpg" alt="Chicago" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/frontend/img/img/banner3.jpg" alt="New york" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/frontend/img/img/banner4.jpg" alt="New york" style="width:100%;">
-                    </div>
-                    <div class="carousel-header ">
-                        <div class="col-md-9 col-md-push-1 text-left">
-                            <h1 class="probootstrap-heading probootstrap-animate">
-                            BOOK A TRUCK, <br> TRACK YOUR CARGO!</h1>
-                            <h3 class="col-md-10 probootstrap-heading2 probootstrap-animate">
-                                The Quick and Secure way to order a truck and track your cargo in Ghana.</h3>
-                            <div class=" col-md-12 probootstrap-subheading">
-                            <br>
-                            <p class="probootstrap-animate"><a href="/cargo-owner" role="button"
-                                class="btn btn-default geni-btn">Learn More</a>
-                                <a href="#features" class="btn btn-default smoothscroll new-btn" role="button">Get Started</a></p>
+                            <div class="btn btn-default geni-btn">
+                                <a href="/signin" class="label" style=" color: black;" >SIGN IN</a>
                             </div>
                         </div>
+                        <ul>
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/about-page">ABOUT </a></li>
+                            <li><a href="/cargo-owner">CARGO OWNERS</a></li>
+                            <li><a href="/"><img class="d-block" src="assets/frontend/img/img/logo.png" alt="Truckr"></a></li>
+                            <li><a href="/transporters"> TRANSPORTERS</a></li>
+                            <li><a href="/contact">CONTACT</a></li>
+                            <li><a href="/faqs">FAQs</a></li>
+                        </ul>
                     </div>
+                    </nav>
                 </div>
+            </div>
+        </div>
+    </header>
 
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="assets/frontend/img/img/banner1.jpg" alt="Los Angeles" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="assets/frontend/img/img/banner2.jpg" alt="Chicago" style="width:100%;">
             </div>
 
+            <div class="item">
+                <img src="assets/frontend/img/img/banner3.jpg" alt="New york" style="width:100%;">
+            </div>
 
-            <section class="probootstrap-section section-parent">
-                <div class="row text-center ">
-                    <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
-                        <h2 class="mb30 text-black probootstrap-heading">About</h2>
+            <div class="item">
+                <img src="assets/frontend/img/img/banner4.jpg" alt="New york" style="width:100%;">
+            </div>
+            <div class="carousel-header ">
+                <div class="col-md-9 col-md-push-1 text-left">
+                    <h1 class="probootstrap-heading probootstrap-animate">
+                    BOOK A TRUCK, <br> TRACK YOUR CARGO!</h1>
+                    <br>
+                    <h3 class="col-md-10 probootstrap-heading2 probootstrap-animate">
+                        The Quick and Secure way to order a truck and track your cargo in Ghana.</h3>
+                    <div class=" col-md-12 probootstrap-subheading">
+                    <br>
+                    <p class="probootstrap-animate"><a href="#features" role="button"
+                        class="btn btn-default smoothscroll new-btn">Learn More</a>
+                        <a href="/signup" class="btn btn-default smoothscroll new-btn" role="button">Get Started</a></p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-push-6 probootstrap-animate">
-                        <p><img src="assets/frontend/img/img/About.png" alt="about" class="img-responsive" style="max-width: 90%;"></p>
-                    </div>
-                    <div class="col-md-6 col-md-pull-5 probootstrap-section-heading">
-                        <p class="about_content">Truckr is giving cargo owners such as manufacturing companies, 
-                            fast moving consumer goods, distributors, exporters, 
-                            importers and freight forwarders the ability to book 
-                            for any kind of haulage truck to transport their goods just by a click of a button. 
-                            Truckr also offers cargo owners the luxury of tracking their goods with our 
-                            accurate tracking technology during transportation and can also message or 
-                            call the truck drivers on the platform.
-                        </p>
-                        <div class="learn-more-feature">
-                            <div class=""><a href="/cargo-owner" role="button" class="btn btn-sm btn-black geni-btn"  style="margin-left: 50px;">Learn more</a></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </div>
 
 
-            <section class="probootstrap-section" id="features" data-section="features">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 text-center">
-                            <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
-                                <img class="img-feature" src="assets/frontend/img/img/tag.png">
-                                <h2>Transparent Pricing</h2>
-                                <p>No hidden fees. Receive itemized invoices to alleviate accounting burdens.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
-                                <img class="img-feature" src="assets/frontend/img/img/Icons.png">
-                                <h2>Real-time Visibility</h2>
-                                <p>Pinpoint the exact location of your cargo from pickup to delivery. Receive alerts to deal with issues as they arise.</p>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
-                                <img class="img-feature" src="assets/frontend/img/img/coin.png">
-                                <h2>Efficiency & Cost Saving</h2>
-                                <p>Save time on booking and pay lesser than with traditional agents and brokers.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
-                                <img class="img-feature" src="assets/frontend/img/img/fluid.png">
-                                <h2>Fluid Execution</h2>
-                                <p>Get matched with a network of 4,000+ vetted trucks and drivers, 
-                                    a full insurance coverage and 24/7 guaranteed support.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="quote">
-                <div class="quote-paragraphs">
-                <img class="quote-image" src="assets/frontend/img/img/tires.png">
-                <p class="single-paragraph">
-                    "By injecting technology and transparency into road freight logistics, 
-                    you get an accelerated experience that is convenient, 
-                    cost-effective and reliable."
+
+    <section class="probootstrap-section section-parent">
+        <div class="row text-center ">
+            <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+                <h2 class="mb30 text-black probootstrap-heading">About</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-push-6 probootstrap-animate">
+                <p><img src="assets/frontend/img/img/About.png" alt="about" class="img-responsive" style="max-width: 90%;"></p>
+            </div>
+            <div class="col-md-6 col-md-pull-5 probootstrap-section-heading">
+                <p style=" color: black;" class="about_content">Truckr is giving cargo owners such as manufacturing companies, 
+                    fast moving consumer goods, distributors, exporters, 
+                    importers and freight forwarders the ability to book 
+                    for any kind of haulage truck to transport their goods just by a click of a button. 
+                    Truckr also offers cargo owners the luxury of tracking their goods with our 
+                    accurate tracking technology during transportation and can also message or 
+                    call the truck drivers on the platform.
                 </p>
-                </div>
-            </section>
-
-            <section class="probootstrap-section probootstrap " id="features" data-section="features">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
-                            <h2 class="mb70 text-black probootstrap-heading">Features</h2>
-                        </div>
-                    </div>
-                    <!-- END row -->
-                    <div class="row mb100">
-                        <div class="col-md-5 col-md-push-1  probootstrap-animate">
-                            <p><img src="assets/frontend/img/img/tripHistory.jpg" alt="trip history" class="img-responsive probootstrap-shadow"></p>
-                        </div>
-                        <div class="col-md-4 col-md-push-2 probootstrap-section-heading">
-                            <h2 class="text-primary probootstrap-heading-2" style="margin-top: 40px">Complete control</h2>
-                            <p>Book, manage and track your goods, invoices, payments and waybills online beit on desktop or mobile.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- END row -->
-                    <div class="row mb100">
-                        <div class="col-md-5 col-md-push-6 probootstrap-animate">
-                            <p><img src="assets/frontend/img/img/Order.jpg" alt="order" class="img-responsive probootstrap-shadow"></p>
-                        </div>
-                        <div class="col-md-4 col-md-pull-4 probootstrap-section-heading">
-                            <h3 class="text-primary probootstrap-heading-2 " style="margin-top: 40px">Transparent Pricing</h3>
-                            <p>
-                                Know exactly how much you’ll spend on each cargo to be transported with our detailed online quote. We give you 100% transparency, upfront. No surprises.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- END row -->
-
-                    <div class="row mb100">
-                        <div class="col-md-5 col-md-push-1  probootstrap-animate">
-                            <p><img src="assets/frontend/img/img/tripHistory.jpg" alt="trip history" class="img-responsive probootstrap-shadow"></p>
-                        </div>
-                        <div class="col-md-4 col-md-push-2 probootstrap-section-heading">
-                            <h3 class="text-primary probootstrap-heading-2 " style="margin-top: 40px">Real-time freight visibility</h3>
-                            <p>
-                                From pickup to delivery, monitor your cargo with our advanced real-time tracking system. Get timely alerts about delays & unusual waiting times.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- END row -->
-                </div>
-            </section>
-            <!-- END section -->
-
-            <section class="probootstrap-section" data-section="pricing">
-                <div class="container">
-                    <div class="row text-center ">
-                        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading mb30">
-                            <h1 class="mb30 text-black probootstrap-heading"><br>Are you a Logistics manager/<br>Freight forwarder?</h1>
-                        </div>
-                    </div>
-                    <!-- END row -->
-                    <section class="logistic-manager">
-                        <div class="container">
-                            <div class="row mb100">
-                            <div class="col-md-12  probootstrap-animate">
-                                <img class=" logistics-manager-image" src="assets/frontend/img/img/FreightForwarder.png" class="img-responsive">
-                                </div>
-                            <div class="col-md-12 single-paragraph-holder ">
-                                <p>Truckr instantly gives you access to thousands of trusted and reviewed truck drivers at short notice, 
-                                    at a competitive rate and allows you to track your delivery status and location at every stage of the journey. 
-                                    No phone calls, no paperwork, just a fast and efficient trucking service.
-                                </p>
-                                <div class=""><a href="/cargo-owner" role="button" class="btn btn-sm btn-black geni-btn">Learn more</a></div>
-                            </div>
-
-                            </div>
-                        </div>
-                    </section>
-                    <div class="row text-center mb10">
-                        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
-                            <h1 class="mb30 text-black probootstrap-heading"><br>Do you own a truck or a/<br>Fleet of trucks?</h1>
-                        </div>
-                    </div>
-                    <section class="logistic-manager">
-                        <div class="container">
-                            <div class="row mb50">
-                            <div class="col-md-12  probootstrap-animate">
-                                <img class="fleet-manager-image" src="assets/frontend/img/img/TruckOwner.png" class="img-responsive">
-                            </div>
-                            <div class="col-md-12 single-paragraph-holder ">
-                                <p>Truckr helps you to get more jobs at great rates and get paid quickly.</p>
-                                <div class=""><a href="/transporters" role="button" class="btn btn-sm btn-black geni-btn">Learn more</a>
-                                    </div>
-                            </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>
-            <!-- END section -->
-
-            <section class="get-app-section">
-                <div class="get-app">
-                    <img class="get-app-image" src="assets/frontend/img/img/GetAppBackground.jpg" class="img-responsive" width="100%" alt="image">
-                    <div class="mobile-app-all">
-                        <div class="col-md-3 mobile-app  probootstrap-animate">
-                            <img class="phone-image" src="assets/frontend/img/img/DeliverCargo.png" class="img-responsive" width="100%" alt="image">
-                        </div>
-                        <div class="mobile-app-info">
-                            <h2 style=" font-weight:  700;">
-                            Get the Truckr Mobile App
-                            </h2>
-                            <h3 class="features_content2">
-                            Book, manage and track your goods, invoices, payments and waybills online on your android mobile.</h3>
-                            <div class="app-store-img">
-                            <img class="#" href="/transporters" role="button" src="assets/frontend/img/img/googlePlay.png" class="img-responsive" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="subscribe-header ">
-                <div><h1 class="mb30 text-black probootstrap-heading" style="font-weight:  700;">
-                    Are you interested to learn more about our product?</h1>
-                </div>
-                <p class="subscribe-subheader">Subsrcribe to our newsletter!</p>
-
-                <div class="subscribe-form img-responsive">
-                    <form action="">
-                        <input type="text" placeholder="&#9993;    |Enter your email" style="color:white" class="subscribe-text ">
-                        <input type="submit" value="subscribe" class="subscribe-btn">
-                    </form>
+                <div class="learn-more-feature">
+                    <div class=""><a href="/cargo-owner" role="button" class="btn btn-sm btn-black geni-btn"  style="margin-left: 50px;">Learn more</a></div>
                 </div>
             </div>
+        </div>
+    </section>
 
 
-            <footer class="footer" style="background-image: url(assets/frontend/img/img/footerbg.jpg);" role="contentinfo">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-content">
-                            <div class="contact" id="contact">
-                            <img class="d-block" src="assets/frontend/img/img/truckrFooterLogo.png" alt="Truckr">
-                            <ul>
-                                <li><a >No. 20 Aluguntugui Street,</a></li>
-                                <li><a >East Legon, Accra, Ghana</a></li>
-                                <li><a >Tel: +233 206 703 723</a></li>
-                                <li><a href="info@truckrtech.com" >info@truckrtech.com</a></li>
-                            </ul>
-                            </div>
-                            <div class="product-footer">
-                                <h4 class="footer-link-header">Product</h4>
-                                <ul>
-                                    <li><a href="#">Cargo Owner</a></li>
-                                    <li><a href="#">Transporter</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                </ul>
-                            </div>
-                            <div class="product-footer">
-                                <h4 class="footer-link-header">Company</h4>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Help</a></li>
-                                </ul>
-                            </div>
-                            <div class="product-footer">
-                                <h4 class="footer-link-header">Website</h4>
-                                <ul>
-                                    <li><a href="#">Terms</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                </ul>
-                            </div>
-                            <div class="product-footer">
-                                <h4 class="footer-link-header">Social Media</h4>
-                                <ul>
-                                    <li><a href="#">Follow us on facebook</a></li>
-                                    <li><a href="#">Follow us on twitter</a></li>
-                                </ul>
-                            </div>
-                        </div>
+    <section class="probootstrap-section" id="features" data-section="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
+                        <img class="img-feature" src="assets/frontend/img/img/tag.png">
+                        <h2>Transparent Pricing</h2>
+                        <p style=" color: black;">No hidden fees. Receive itemized invoices to alleviate accounting burdens.</p>
                     </div>
                 </div>
-                <div class="footer-copyright">
-                    <div class="copyright"><p>©2018 <span>Truckr Technologies All rights reserved.</span></p></div>
-                </div>
-            </footer>
+                <div class="col-md-3 text-center">
+                    <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
+                        <img class="img-feature" src="assets/frontend/img/img/Icons.png">
+                        <h2>Real-time Visibility</h2>
+                        <p style=" color: black;">Pinpoint the exact location of your cargo from pickup to delivery. Receive alerts to deal with issues as they arise.</p>
 
-    </body>
-</html>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
+                        <img class="img-feature" src="assets/frontend/img/img/coin.png">
+                        <h2>Efficiency & Cost Saving</h2>
+                        <p style=" color: black;">Save time on booking and pay less than with traditional agents and brokers.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
+                        <img class="img-feature" src="assets/frontend/img/img/fluid.png">
+                        <h2>Fluid Execution</h2>
+                        <p style=" color: black;">Get matched with a network of 4,000+ vetted trucks and drivers, 
+                            a full insurance coverage and 24/7 guaranteed support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="quote-paragraphs">
+        <img class="quote-image" src="assets/frontend/img/img/tires.png">
+        <p class="single-paragraph">
+            "By injecting technology and transparency into road freight logistics, 
+            you get an accelerated experience that is convenient, 
+            cost-effective and reliable."
+        </p>
+        </div>
+    </section>
+
+    <section class="probootstrap-section probootstrap " id="features" data-section="features">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+                    <h2 class="mb70 text-black probootstrap-heading">Features</h2>
+                </div>
+            </div>
+            <!-- END row -->
+            <div class="row mb100">
+                <div class="col-md-5 col-md-push-1  probootstrap-animate">
+                    <p><img src="assets/frontend/img/img/tripHistory.jpg" alt="trip history" class="img-responsive probootstrap-shadow"></p>
+                </div>
+                <div class="col-md-4 col-md-push-2 probootstrap-section-heading">
+                    <h2 class="text-black probootstrap-heading-2" style="margin-top: 40px">Complete control</h2>
+                    <p style=" color: black;">Book, manage and track your goods, invoices, payments and waybills online beit on desktop or mobile.
+                    </p>
+                </div>
+            </div>
+            <!-- END row -->
+            <div class="row mb100">
+                <div class="col-md-5 col-md-push-6 probootstrap-animate">
+                    <p><img src="assets/frontend/img/img/Order.jpg" alt="order" class="img-responsive probootstrap-shadow"></p>
+                </div>
+                <div class="col-md-4 col-md-pull-4 probootstrap-section-heading">
+                    <h3 class="text-black probootstrap-heading-2 " style="margin-top: 40px">Transparent Pricing</h3>
+                    <p style=" color: black;">
+                        Know exactly how much you’ll spend on each cargo to be transported with our detailed online quote. We give you 100% transparency, upfront. No surprises.
+                    </p>
+                </div>
+            </div>
+            <!-- END row -->
+
+            <div class="row mb100">
+                <div class="col-md-5 col-md-push-1  probootstrap-animate">
+                    <p><img src="assets/frontend/img/img/tripHistory.jpg" alt="trip history" class="img-responsive probootstrap-shadow"></p>
+                </div>
+                <div class="col-md-4 col-md-push-2 probootstrap-section-heading">
+                    <h3 class="text-black probootstrap-heading-2 " style="margin-top: 40px">Real-time freight visibility</h3>
+                    <p style=" color: black;">
+                        From pickup to delivery, monitor your cargo with our advanced real-time tracking system. Get timely alerts about delays & unusual waiting times.
+                    </p>
+                </div>
+            </div>
+            <!-- END row -->
+        </div>
+    </section>
+    <!-- END section -->
+
+    <section class="probootstrap-section" data-section="pricing">
+        <div class="container">
+            <div class="row text-center ">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading mb30">
+                    <h1 class="mb30 text-black probootstrap-heading"><br>Are you a Logistics manager/<br>Freight forwarder?</h1>
+                </div>
+            </div>
+            <!-- END row -->
+            <section class="logistic-manager">
+                <div class="container">
+                    <div class="row mb100">
+                    <div class="col-md-12  probootstrap-animate">
+                        <img class=" logistics-manager-image" src="assets/frontend/img/img/FreightForwarder.png" class="img-responsive">
+                        </div>
+                    <div class="col-md-12 single-paragraph-holder ">
+                        <p style=" color: black;">Truckr instantly gives you access to thousands of trusted and reviewed truck drivers at short notice, 
+                            at a competitive rate and allows you to track your delivery status and location at every stage of the journey. 
+                            No phone calls, no paperwork, just a fast and efficient trucking service.
+                        </p>
+                        <div class=""><a href="/cargo-owner" role="button" class="btn btn-sm btn-black geni-btn">Learn more</a></div>
+                    </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="row text-center mb10">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+                    <h1 class="mb30 text-black probootstrap-heading"><br>Do you own a truck or a/<br>Fleet of trucks?</h1>
+                </div>
+            </div>
+            <section class="logistic-manager">
+                <div class="container">
+                    <div class="row mb50">
+                    <div class="col-md-12  probootstrap-animate">
+                        <img class="fleet-manager-image" src="assets/frontend/img/img/TruckOwner.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-12 single-paragraph-holder ">
+                        <p style=" color: black;">Truckr helps you to get more jobs at great rates and get paid quickly.</p>
+                        <div class=""><a href="/transporters" role="button" class="btn btn-sm btn-black geni-btn">Learn more</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <section class="get-app-section">
+        <div class="get-app">
+            <img class="get-app-image" src="assets/frontend/img/img/GetAppBackground.jpg" class="img-responsive" width="100%" alt="image">
+            <div class="mobile-app-all">
+                <div class="col-md-3 mobile-app  probootstrap-animate">
+                    <img class="phone-image" src="assets/frontend/img/img/DeliverCargo.png" class="img-responsive" width="100%" alt="image">
+                </div>
+                <div class="mobile-app-info">
+                    <h2 style=" font-weight:  700;">
+                    Get Truckr Mobile App
+                    </h2>
+                    <h4 class="features_content2">
+                    Book, manage and track your goods, invoices, payments and waybills online on your android mobile.</h4>
+                    <div class="app-store-img">
+                    <img class="#" href="/transporters" role="button" src="assets/frontend/img/img/googlePlay.png" class="img-responsive" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="subscribe-header ">
+        <div><h1 class="mb30 text-black probootstrap-heading" style="font-weight:  700;">
+            Are you interested to learn more about our product?</h1>
+        </div>
+        <p class="subscribe-subheader">Subsrcribe to our newsletter!</p>
+
+        <div class="subscribe-form img-responsive">
+            <form action="">
+                <input type="text" placeholder="&#9993;    |Enter your email" style="color:white" class="subscribe-text ">
+                <input type="submit" value="subscribe" class="subscribe-btn">
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="footer" style="background-image: url(assets/frontend/img/img/footerbg.jpg);" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="contact" id="contact">
+                    <img class="d-block" src="assets/frontend/img/img/truckrFooterLogo.png" alt="Truckr">
+                    <ul>
+                        <li><a >No. 20 Aluguntugui Street,</a></li>
+                        <li><a >East Legon, Accra, Ghana</a></li>
+                        <li><a >Tel: +233 206 703 723</a></li>
+                        <li><a href="info@truckrtech.com" >info@truckrtech.com</a></li>
+                    </ul>
+                    </div>
+                    <div class="product-footer">
+                        <h4 class="footer-link-header">Product</h4>
+                        <ul>
+                            <li><a href="#">Cargo Owner</a></li>
+                            <li><a href="#">Transporter</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <h4 class="footer-link-header">Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <h4 class="footer-link-header">Website</h4>
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <h4 class="footer-link-header">Social Media</h4>
+                        <ul>
+                            <li><a href="#">Follow us on facebook</a></li>
+                            <li><a href="#">Follow us on twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="copyright"><p>©2018 <span>Truckr Technologies All rights reserved.</span></p></div>
+        </div>
+    </footer>
+
+</body>

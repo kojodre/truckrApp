@@ -156,7 +156,7 @@ iframe {
   margin-left: 80px;
   border-radius: 10px;
   overflow: hidden;
-  padding: 20px 55px 20px 55px;
+  padding: 19px 55px 20px 55px;
 
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
@@ -180,7 +180,7 @@ iframe {
   color: #333333;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 /*------------------------------------------------------------------
@@ -190,7 +190,7 @@ iframe {
   width: 100%;
   position: relative;
   background-color: #fff;
-  border: 1px solid #c7c0c0;
+  border: 1px solid #777;
   margin-bottom: 17px;
 }
 
@@ -199,7 +199,7 @@ iframe {
   width: 100%;
   background: transparent;
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: #1b3815;
   line-height: 1.2;
 }
@@ -207,7 +207,7 @@ iframe {
 
 /*---------------------------------------------*/
 input.input100 {
-  height: 40px;
+  height: 28px;
   padding: 0 20px 0 23px;
 }
 
