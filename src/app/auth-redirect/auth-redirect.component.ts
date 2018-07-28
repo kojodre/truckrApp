@@ -28,7 +28,8 @@ export class AuthRedirectComponent implements OnInit {
   // signout method
   signOut(): void {
     firebase.auth().signOut().then(function () {
-      window.location.href = `${firebaseConfig.corporateSiteUrl}`;
+      // window.location.href = `${firebaseConfig.corporateSiteUrl}`;
+      this.route.navigate(['/']);
     });
   }
 
