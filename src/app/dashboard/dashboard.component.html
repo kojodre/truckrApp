@@ -1,83 +1,86 @@
+<div>
 
-<!-- Main navbar -->
-<app-navbar></app-navbar>
-<!-- /main navbar -->
-
-<!-- Page container -->
-<div class="page-container">
-  <!-- Page content -->
-  <div class="page-content">
-    <!-- Main sidebar -->
-    <div class="sidebar sidebar-main">
-      <div class="sidebar-content">
-        <!-- User menu -->
-        <div class="sidebar-user">
-          <div class="category-content">
-            <div class="media">
-              <a routerLink="#" class="media-left"><img src="assets/images/image.png"></a>
-              <div class="media-body">
-                <span class="media-heading text-semibold">Victoria Baker</span>
-                <div class="text-size-mini text-muted">
-                  &nbsp;Accra, Ghana
+  <!-- Main navbar -->
+  <app-navbar></app-navbar>
+  <!-- /main navbar -->
+  <div class="container-fluid" style="background-color: #ebe9e9 !important">
+    <!-- Page container -->
+    <div class="page-container col-md-2">
+      <!-- Page content -->
+      <div class="page-content">
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main">
+          <div class="sidebar-content">
+            <!-- User menu -->
+            <div class="sidebar-user">
+              <div class="category-content">
+                <div class="media">
+                  <a routerLink="#" class="media-left"><img src="assets/images/image.png"></a>
+                  <div class="media-body">
+                    <span class="media-heading text-semibold">Victoria Baker</span>
+                    <div class="text-size-mini text-muted">
+                      &nbsp;Accra, Ghana
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- /user menu -->
+            <!-- /user menu -->
 
 
-        <!-- Main navigation -->
-        <div class="sidebar-category sidebar-category-visible">
-          <div class="category-content no-padding">
-            <ul class="navigation navigation-main navigation-accordion">
+            <!-- Main navigation -->
+            <div class="sidebar-category sidebar-category-visible">
+              <div class="category-content no-padding">
+                <ul class="navigation navigation-main navigation-accordion">
 
-              <!-- Main -->
-              <div class="text order-button">
-                <a routerLink="/dashboard/new-request" class="btn btn-primary">New Request</a>
+                  <!-- Main -->
+                  <div class="text order-button">
+                    <a routerLink="/dashboard/new-request" class="btn btn-primary">New Request</a>
+                  </div>
+                  <li><a routerLink="/dashboard"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                  <li><a routerLink="/dashboard/trip-history"><i class="icon-stack"></i> <span>Trip History</span></a></li>
+                  <li><a routerLink="/dashboard/map"><i class="icon-home4"></i><span>Map</span></a></li>
+                  <li><a routerLink="/dashboard/message"><i class="icon-home4"></i><span>Message</span></a></li>
+                  <li class="navigation-divider"></li>
+                  <li><a routerLink="/dashboard/transactions"><i class="icon-home4"></i><span>Transactions</span></a></li>
+                  <li><a routerLink="/dashboard/orders"><i class="icon-home4"></i><span>Orders</span></a></li>
+                  <li><a routerLink="/dashboard/about"><i class="icon-home4"></i><span>About</span></a></li>
+                  <li><a routerLink="/dashboard/help"><i class="icon-list-unordered"></i> <span>Help / FAQ</span></a></li>
+                  <!-- /main -->
+
+                </ul>
               </div>
-              <li><a routerLink="/dashboard"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
-              <li><a routerLink="/dashboard/trip-history"><i class="icon-stack"></i> <span>Trip History</span></a></li>
-              <li><a routerLink="/dashboard/map"><i class="icon-home4"></i><span>Map</span></a></li>
-              <li><a routerLink="/dashboard/message"><i class="icon-home4"></i><span>Message</span></a></li>
-              <li class="navigation-divider"></li>
-              <li><a routerLink="/dashboard/transactions"><i class="icon-home4"></i><span>Transactions</span></a></li>
-              <li><a routerLink="/dashboard/orders"><i class="icon-home4"></i><span>Orders</span></a></li>
-              <li><a routerLink="/dashboard/about"><i class="icon-home4"></i><span>About</span></a></li>
-              <li><a routerLink="/dashboard/help"><i class="icon-list-unordered"></i> <span>Help / FAQ</span></a></li>
-              <!-- /main -->
+            </div>
+            <!-- /main navigation -->
 
-            </ul>
           </div>
         </div>
-        <!-- /main navigation -->
+        <!-- /main sidebar -->
 
       </div>
+      <!-- /page content -->
+
     </div>
-    <!-- /main sidebar -->
+    <!-- /page container -->
 
     <!-- Main content -->
-    <div class="content-wrapper">
+    <div class="page-container col-md-8">
 
       <!-- Content area -->
-      <div class="content">
+      <div class="page-content">
 
         <!-- dashboard panel -->
-          <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
         <!-- /dashboard panel -->
-
+      </div>
+      <!-- /content area -->
+      <div class="footer-copyright col-md-12">
         <!-- Footer -->
         <app-footer></app-footer>
         <!-- /footer -->
-
       </div>
-      <!-- /content area -->
-
     </div>
     <!-- /main content -->
-
   </div>
-  <!-- /page content -->
 
 </div>
-<!-- /page container -->

@@ -1,10 +1,14 @@
+<div class="content">
+  <div class="col-md-12 panel panel-flat">
 
-<!-- Simple panel -->
-<div>
-  <!-- this creates a google map on the page with the given lat/lng from -->
-  <!-- the component as the initial center of the map: -->
-  <agm-map [latitude]="lat" [longitude]="lng">
-    <agm-marker [latitude]="currLat" [longitude]="currLong"></agm-marker>
-  </agm-map>
+    <!-- Simple panel -->
+    <div>
+      <!-- this creates a google map on the page with the given lat/lng from -->
+      <!-- the component as the initial center of the map: -->
+      <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="currLat" [longitude]="currLong"></agm-marker>
+      </agm-map>
+    </div>
+    <!-- /simple panel -->
+  </div>
 </div>
-<!-- /simple panel -->

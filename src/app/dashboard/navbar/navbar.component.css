@@ -1,5 +1,10 @@
 .navbar {
-    background-color: #F8F5F5 !important;
+    background-color: white !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 0;
+    border: none transparent;
+    
 }
 .navbar-brand img {
     width: 180px !important;

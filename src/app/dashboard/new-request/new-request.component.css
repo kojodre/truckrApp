@@ -15,8 +15,19 @@ body {
 .dropdown-toggle{
     color: black !important;
 }
+.row {
+    padding-top: 13px;
+}
+.h2, h2 {
+    font-size: .9rem !important;
+}
+label {
+    display: inline-block;
+    font-size: .7rem !important;
+    font-weight: 400;
+}
 .panel-body {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     align-items: center;
     text-align: center;

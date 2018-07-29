@@ -27,7 +27,7 @@ export class NewRequestComponent implements OnInit {
   }
 
   bookTruck() {
-    const promise = this.db.list('user/cargo owner/').push({
+    const promiseOp = this.db.list('user/cargo owner/').push({
     'commodityType': this.commodityType,
     'comodityWeight': this.comodityWeight,
     'comodityValue': this.comodityValue,
@@ -42,6 +42,7 @@ export class NewRequestComponent implements OnInit {
     'info': this.info
 
   });
-  this.router.navigate(['map']);
+  promiseOp.then((response) => console.log(response));
+  // this.router.navigate(['map']);
   }
 }

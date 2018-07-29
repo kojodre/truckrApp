@@ -1,123 +1,124 @@
 
+<div class="content">
+  <div class="col-md-10 panel panel-flat">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>Load Details</h2>
+        <form role="form" id="reused_form">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>
+                  Type Of Commodity:</label>
+              <input [(ngModel)]="commodityType" name="commodity type" type="text" class="form-control" id="commodity-type" maxlength="50">
+            </div>
+            <div class="col-sm-6 form-group">
+              <label>
+                  Weight Of Commodity:</label>
+              <input [(ngModel)]="comodityWeight" name="commodity weight" type="text" class="form-control" id="commodity-weight" maxlength="50">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>
+                  Vehicle Type:</label>
+              <div class="form-group">
+                <select [(ngModel)]="vehicleType" name="vehicle type" class="col-lg-12 bootstrap-select show-tick" data-width="100%">
+                  <option>flatbed truck</option>
+                  <option>van</option>
+                  <option>pick up truck</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6 form-group">
+              <label>
+                  Value Of Commodity:</label>
+              <input [(ngModel)]="comodityValue" type="number" class="form-control" id="price" name="commodity-value" maxlength="50">
+            </div>
+          </div>
+          <h2>Pick Up Details</h2>
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>
+                  Pick Up Date:</label>
+              <input [(ngModel)]="pickupDate" type="date" class="form-control" id="pickup-date" name="pickup-date" maxlength="50">
+            </div>
+            <div class="col-sm-6 form-group">
+              <label>
+                  Pick Up Location:</label>
+              <div class="form-group">
+                <select [(ngModel)]="pickupLocation" name="address" class="col-lg-12 bootstrap-select show-tick" data-width="100%">
+                  <option>Tema</option>
+                  <option>Kumasi</option>
+                  <option>Tamale</option>
+                  <option>Accra</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>
+                  Contacts Name:</label>
+              <input [(ngModel)]="contactsName" type="text" class="form-control" id="email" name="email" maxlength="50">
+            </div>
+            <div class="col-sm-6 form-group">
+              <label>
+                  Contacts Phone Number:</label>
+              <input [(ngModel)]="contactsNumber" type="tel" class="form-control" id="phone" name="phone" required maxlength="50">
+            </div>
+          </div>
+          <h2>Drop Off Details</h2>
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>
+                  Receiver's Name:</label>
+              <input [(ngModel)]="receiverName" type="text" class="form-control" id="name" name="name" maxlength="50">
+            </div>
+            <div class="col-sm-6 form-group">
+              <label>
+                  Receiver's Phone Number:</label>
+              <input [(ngModel)]="receiverNumber" type="tel" class="form-control" id="phone" name="phone" required maxlength="50">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>
+                  Drop Off Location:</label>
+              <div class="form-group">
+                <select [(ngModel)]="dropoffLocation" name="dropoff-address" class="col-lg-12 bootstrap-select show-tick" data-width="100%">
+                  <option>Tema</option>
+                  <option>Kumasi</option>
+                  <option>Tamale</option>
+                  <option>Accra</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6 form-group">
+              <label>
+                  Special Instructions:</label>
+              <textarea [(ngModel)]="info"class="form-control" type="textarea" id="message" name="message" placeholder="Your Message Here" maxlength="4000"
+              rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-6 form-group">
+            <label class="display-block text-semibold">Are you interested in cargo insurance</label>
+              <label class="checkbox-inline">
+                <input type="checkbox" class="styled" checked="checked">
+                Yes
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" class="styled">
+                No
+              </label>
+          </div>
+            <div class="col-sm-6 form-group">
+              <button (click)="bookTruck()" type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Book Truck </button>
+            </div>
+          </div>
 
-<div class="col-md-8 panel panel-flat">
-<div class="row">
-  <div class="col-md-8 col-md-offset-3">
-    <h2>Load Details</h2>
-    <form role="form" id="reused_form">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <label>
-              Type Of Commodity:</label>
-          <input [(ngModel)]="commodityType" name="commodity type" type="text" class="form-control" id="commodity-type" maxlength="50">
-        </div>
-        <div class="col-sm-6 form-group">
-          <label>
-              Weight Of Commodity:</label>
-          <input [(ngModel)]="comodityWeight" name="commodity weight" type="text" class="form-control" id="commodity-weight" maxlength="50">
-        </div>
+        </form>
       </div>
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <label>
-              Vehicle Type:</label>
-          <div class="form-group">
-            <select [(ngModel)]="vehicleType" name="vehicle type" class="col-lg-12 bootstrap-select show-tick" data-width="100%">
-              <option>flatbed truck</option>
-              <option>van</option>
-              <option>pick up truck</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-sm-6 form-group">
-          <label>
-              Value Of Commodity:</label>
-          <input [(ngModel)]="comodityValue" type="number" class="form-control" id="price" name="commodity-value" maxlength="50">
-        </div>
-      </div>
-      <h2>Pick Up Details</h2>
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <label>
-              Pick Up Date:</label>
-          <input [(ngModel)]="pickupDate" type="date" class="form-control" id="pickup-date" name="pickup-date" maxlength="50">
-        </div>
-        <div class="col-sm-6 form-group">
-          <label>
-              Pick Up Location:</label>
-          <div class="form-group">
-            <select [(ngModel)]="pickupLocation" name="address" class="col-lg-12 bootstrap-select show-tick" data-width="100%">
-              <option>Tema</option>
-              <option>Kumasi</option>
-              <option>Tamale</option>
-              <option>Accra</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <label>
-              Contacts Name:</label>
-          <input [(ngModel)]="contactsName" type="text" class="form-control" id="email" name="email" maxlength="50">
-        </div>
-        <div class="col-sm-6 form-group">
-          <label>
-              Contacts Phone Number:</label>
-          <input [(ngModel)]="contactsNumber" type="tel" class="form-control" id="phone" name="phone" required maxlength="50">
-        </div>
-      </div>
-      <h2>Drop Off Details</h2>
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <label>
-              Receiver's Name:</label>
-          <input [(ngModel)]="receiverName" type="text" class="form-control" id="name" name="name" maxlength="50">
-        </div>
-        <div class="col-sm-6 form-group">
-          <label>
-              Receiver's Phone Number:</label>
-          <input [(ngModel)]="receiverNumber" type="tel" class="form-control" id="phone" name="phone" required maxlength="50">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <label>
-              Drop Off Location:</label>
-          <div class="form-group">
-            <select [(ngModel)]="dropoffLocation" name="dropoff-address" class="col-lg-12 bootstrap-select show-tick" data-width="100%">
-              <option>Tema</option>
-              <option>Kumasi</option>
-              <option>Tamale</option>
-              <option>Accra</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-sm-6 form-group">
-          <label>
-              Special Instructions:</label>
-          <textarea [(ngModel)]="info"class="form-control" type="textarea" id="message" name="message" placeholder="Your Message Here" maxlength="4000"
-          rows="3"></textarea>
-        </div>
-      </div>
-      <div class="row">
-      <div class="col-sm-6 form-group">
-        <label class="display-block text-semibold">Are you interested in cargo insurance</label>
-        <label class="checkbox-inline">
-          <input type="checkbox" class="styled" checked="checked">
-          Yes
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" class="styled">
-          No
-        </label>
-      </div>
-        <div class="col-sm-6 form-group">
-          <button (click)="bookTruck()" type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Book Truck </button>
-        </div>
-      </div>
-
-    </form>
+    </div>
   </div>
-</div>
 </div>
