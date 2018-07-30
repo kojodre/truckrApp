@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { environment, firebaseConfig } from '../environments/environment.prod';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -69,6 +70,7 @@ import { FaqsComponent } from './home/faqs/faqs.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,

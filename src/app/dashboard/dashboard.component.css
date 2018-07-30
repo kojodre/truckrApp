@@ -29,6 +29,9 @@ body {
     padding-right: 25px !important;
     padding-left: 25px !important;
     font-weight: bold !important;
+    font-size: .7rem; 
+    line-height: 1;
+    border-radius: 0rem;
 }
 .btn-primary{
     border-color: white !important;

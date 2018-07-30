@@ -1,5 +1,5 @@
 .navbar {
-    background-color: white !important;
+    background-color: black !important;
     padding: 0 !important;
     margin-bottom: 0 !important;
     border-radius: 0;
@@ -7,12 +7,14 @@
     
 }
 .navbar-brand img {
-    width: 180px !important;
+    width: 230px !important;
+    padding-left: 35px;
+    padding-top: 8px;
 }
 
 .navbar-inverse .navbar-header{
     flex: 1 !important;
 }
 .dropdown-toggle{
-    color: black !important;
+    color: white !important;
 }

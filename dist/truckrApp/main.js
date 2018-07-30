@@ -1,5 +1,285 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	var module = __webpack_require__(id);
+	return module;
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error('Cannot find module "' + req + '".');
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -165,12 +445,11 @@ module.exports = "<nav class=\"navbar \">\r\n  <a class=\"navbar-brand\" href=\"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "./src/environments/environment.prod.ts");
-/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
-/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var firebaseui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebaseui */ "./node_modules/firebaseui/dist/npm.js");
-/* harmony import */ var firebaseui__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(firebaseui__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var firebaseui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebaseui */ "./node_modules/firebaseui/dist/npm.js");
+/* harmony import */ var firebaseui__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebaseui__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -184,19 +463,18 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-
 var SignupComponent = /** @class */ (function () {
     function SignupComponent(route) {
         this.route = route;
-        this.corporateSiteUrl = '';
-        this.corporateSiteUrl = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl;
+        this.corporateUrl = '';
+        // this.corporateUrl = firebaseConfig.corporateSiteUrl;
     }
     SignupComponent.prototype.ngOnInit = function () {
         var _this = this;
         // Check for already signed in user
-        firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]().onAuthStateChanged(function (user) {
+        firebase__WEBPACK_IMPORTED_MODULE_1__["auth"]().onAuthStateChanged(function (user) {
             if (user) {
-                window.location.href = "" + _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["environment"].corporateSiteUrl;
+                // window.location.href = `${firebaseConfig.corporateSiteUrl}/auth-redirect`;
                 _this.route.navigate(['/auth-redirect']);
             }
             else {
@@ -210,15 +488,15 @@ var SignupComponent = /** @class */ (function () {
         var uiConfig = {
             signInOptions: [
                 // Leave the lines as is for the providers you want to offer your users.
-                firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].GoogleAuthProvider.PROVIDER_ID,
-                firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].EmailAuthProvider.PROVIDER_ID,
-                firebase__WEBPACK_IMPORTED_MODULE_2__["auth"].PhoneAuthProvider.PROVIDER_ID
+                firebase__WEBPACK_IMPORTED_MODULE_1__["auth"].GoogleAuthProvider.PROVIDER_ID,
+                firebase__WEBPACK_IMPORTED_MODULE_1__["auth"].EmailAuthProvider.PROVIDER_ID,
+                firebase__WEBPACK_IMPORTED_MODULE_1__["auth"].PhoneAuthProvider.PROVIDER_ID
             ],
             // Terms of service url.
             tosUrl: '<your-tos-url>'
         };
         // Initialize the FirebaseUI Widget using Firebase.
-        var ui = new firebaseui__WEBPACK_IMPORTED_MODULE_3__["auth"].AuthUI(firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]());
+        var ui = new firebaseui__WEBPACK_IMPORTED_MODULE_2__["auth"].AuthUI(firebase__WEBPACK_IMPORTED_MODULE_1__["auth"]());
         // The start method will wait until the DOM is loaded.
         ui.start('#firebaseui-auth-container', uiConfig);
     };
@@ -232,7 +510,7 @@ var SignupComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./signup.component.html */ "./src/app/accounts/signup/signup.component.html"),
             styles: [__webpack_require__(/*! ./signup.component.css */ "./src/app/accounts/signup/signup.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], SignupComponent);
     return SignupComponent;
 }());
@@ -559,34 +837,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../environments/environment.prod */ "./src/environments/environment.prod.ts");
 /* harmony import */ var angularfire2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angularfire2 */ "./node_modules/angularfire2/index.js");
 /* harmony import */ var angularfire2_database__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! angularfire2/database */ "./node_modules/angularfire2/database/index.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _dashboard_user_user_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dashboard/user/user.component */ "./src/app/dashboard/user/user.component.ts");
-/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _accounts_signup_signup_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./accounts/signup/signup.component */ "./src/app/accounts/signup/signup.component.ts");
-/* harmony import */ var _accounts_signin_signin_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./accounts/signin/signin.component */ "./src/app/accounts/signin/signin.component.ts");
-/* harmony import */ var _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./auth-redirect/auth-redirect.component */ "./src/app/auth-redirect/auth-redirect.component.ts");
-/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
-/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-/* harmony import */ var _dashboard_trip_history_trip_history_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./dashboard/trip-history/trip-history.component */ "./src/app/dashboard/trip-history/trip-history.component.ts");
-/* harmony import */ var _dashboard_map_map_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./dashboard/map/map.component */ "./src/app/dashboard/map/map.component.ts");
-/* harmony import */ var _dashboard_message_message_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./dashboard/message/message.component */ "./src/app/dashboard/message/message.component.ts");
-/* harmony import */ var _dashboard_transactions_transactions_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./dashboard/transactions/transactions.component */ "./src/app/dashboard/transactions/transactions.component.ts");
-/* harmony import */ var _dashboard_orders_orders_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./dashboard/orders/orders.component */ "./src/app/dashboard/orders/orders.component.ts");
-/* harmony import */ var _dashboard_about_about_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./dashboard/about/about.component */ "./src/app/dashboard/about/about.component.ts");
-/* harmony import */ var _dashboard_help_help_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./dashboard/help/help.component */ "./src/app/dashboard/help/help.component.ts");
-/* harmony import */ var _dashboard_new_request_new_request_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./dashboard/new-request/new-request.component */ "./src/app/dashboard/new-request/new-request.component.ts");
-/* harmony import */ var _test_test_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./test/test.component */ "./src/app/test/test.component.ts");
-/* harmony import */ var _dashboard_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./dashboard/navbar/navbar.component */ "./src/app/dashboard/navbar/navbar.component.ts");
-/* harmony import */ var _dashboard_footer_footer_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./dashboard/footer/footer.component */ "./src/app/dashboard/footer/footer.component.ts");
-/* harmony import */ var _dashboard_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./dashboard/sidebar/sidebar.component */ "./src/app/dashboard/sidebar/sidebar.component.ts");
-/* harmony import */ var _dashboard_content_content_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./dashboard/content/content.component */ "./src/app/dashboard/content/content.component.ts");
-/* harmony import */ var _home_about_page_about_page_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./home/about-page/about-page.component */ "./src/app/home/about-page/about-page.component.ts");
-/* harmony import */ var _home_cargo_owner_cargo_owner_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./home/cargo-owner/cargo-owner.component */ "./src/app/home/cargo-owner/cargo-owner.component.ts");
-/* harmony import */ var _home_transporters_transporters_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./home/transporters/transporters.component */ "./src/app/home/transporters/transporters.component.ts");
-/* harmony import */ var _home_contact_contact_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./home/contact/contact.component */ "./src/app/home/contact/contact.component.ts");
-/* harmony import */ var _home_faqs_faqs_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./home/faqs/faqs.component */ "./src/app/home/faqs/faqs.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _dashboard_user_user_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./dashboard/user/user.component */ "./src/app/dashboard/user/user.component.ts");
+/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _accounts_signup_signup_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./accounts/signup/signup.component */ "./src/app/accounts/signup/signup.component.ts");
+/* harmony import */ var _accounts_signin_signin_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./accounts/signin/signin.component */ "./src/app/accounts/signin/signin.component.ts");
+/* harmony import */ var _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./auth-redirect/auth-redirect.component */ "./src/app/auth-redirect/auth-redirect.component.ts");
+/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
+/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
+/* harmony import */ var _dashboard_trip_history_trip_history_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./dashboard/trip-history/trip-history.component */ "./src/app/dashboard/trip-history/trip-history.component.ts");
+/* harmony import */ var _dashboard_map_map_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./dashboard/map/map.component */ "./src/app/dashboard/map/map.component.ts");
+/* harmony import */ var _dashboard_message_message_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./dashboard/message/message.component */ "./src/app/dashboard/message/message.component.ts");
+/* harmony import */ var _dashboard_transactions_transactions_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./dashboard/transactions/transactions.component */ "./src/app/dashboard/transactions/transactions.component.ts");
+/* harmony import */ var _dashboard_orders_orders_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./dashboard/orders/orders.component */ "./src/app/dashboard/orders/orders.component.ts");
+/* harmony import */ var _dashboard_about_about_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./dashboard/about/about.component */ "./src/app/dashboard/about/about.component.ts");
+/* harmony import */ var _dashboard_help_help_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./dashboard/help/help.component */ "./src/app/dashboard/help/help.component.ts");
+/* harmony import */ var _dashboard_new_request_new_request_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./dashboard/new-request/new-request.component */ "./src/app/dashboard/new-request/new-request.component.ts");
+/* harmony import */ var _test_test_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./test/test.component */ "./src/app/test/test.component.ts");
+/* harmony import */ var _dashboard_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./dashboard/navbar/navbar.component */ "./src/app/dashboard/navbar/navbar.component.ts");
+/* harmony import */ var _dashboard_footer_footer_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./dashboard/footer/footer.component */ "./src/app/dashboard/footer/footer.component.ts");
+/* harmony import */ var _dashboard_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./dashboard/sidebar/sidebar.component */ "./src/app/dashboard/sidebar/sidebar.component.ts");
+/* harmony import */ var _dashboard_content_content_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./dashboard/content/content.component */ "./src/app/dashboard/content/content.component.ts");
+/* harmony import */ var _home_about_page_about_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./home/about-page/about-page.component */ "./src/app/home/about-page/about-page.component.ts");
+/* harmony import */ var _home_cargo_owner_cargo_owner_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./home/cargo-owner/cargo-owner.component */ "./src/app/home/cargo-owner/cargo-owner.component.ts");
+/* harmony import */ var _home_transporters_transporters_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./home/transporters/transporters.component */ "./src/app/home/transporters/transporters.component.ts");
+/* harmony import */ var _home_contact_contact_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./home/contact/contact.component */ "./src/app/home/contact/contact.component.ts");
+/* harmony import */ var _home_faqs_faqs_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./home/faqs/faqs.component */ "./src/app/home/faqs/faqs.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -627,51 +906,53 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
-                _dashboard_user_user_component__WEBPACK_IMPORTED_MODULE_8__["UserComponent"],
-                _admin_admin_component__WEBPACK_IMPORTED_MODULE_9__["AdminComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
-                _accounts_signup_signup_component__WEBPACK_IMPORTED_MODULE_11__["SignupComponent"],
-                _accounts_signin_signin_component__WEBPACK_IMPORTED_MODULE_12__["SigninComponent"],
-                _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_13__["AuthRedirectComponent"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"],
-                _dashboard_trip_history_trip_history_component__WEBPACK_IMPORTED_MODULE_16__["TripHistoryComponent"],
-                _dashboard_map_map_component__WEBPACK_IMPORTED_MODULE_17__["MapComponent"],
-                _dashboard_message_message_component__WEBPACK_IMPORTED_MODULE_18__["MessageComponent"],
-                _dashboard_transactions_transactions_component__WEBPACK_IMPORTED_MODULE_19__["TransactionsComponent"],
-                _dashboard_orders_orders_component__WEBPACK_IMPORTED_MODULE_20__["OrdersComponent"],
-                _dashboard_about_about_component__WEBPACK_IMPORTED_MODULE_21__["AboutComponent"],
-                _dashboard_help_help_component__WEBPACK_IMPORTED_MODULE_22__["HelpComponent"],
-                _dashboard_new_request_new_request_component__WEBPACK_IMPORTED_MODULE_23__["NewRequestComponent"],
-                _test_test_component__WEBPACK_IMPORTED_MODULE_24__["TestComponent"],
-                _dashboard_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_25__["NavbarComponent"],
-                _dashboard_footer_footer_component__WEBPACK_IMPORTED_MODULE_26__["FooterComponent"],
-                _dashboard_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_27__["SidebarComponent"],
-                _dashboard_content_content_component__WEBPACK_IMPORTED_MODULE_28__["ContentComponent"],
-                _home_about_page_about_page_component__WEBPACK_IMPORTED_MODULE_29__["AboutPageComponent"],
-                _home_cargo_owner_cargo_owner_component__WEBPACK_IMPORTED_MODULE_30__["CargoOwnerComponent"],
-                _home_transporters_transporters_component__WEBPACK_IMPORTED_MODULE_31__["TransportersComponent"],
-                _home_contact_contact_component__WEBPACK_IMPORTED_MODULE_32__["ContactComponent"],
-                _home_faqs_faqs_component__WEBPACK_IMPORTED_MODULE_33__["FaqsComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                _dashboard_user_user_component__WEBPACK_IMPORTED_MODULE_9__["UserComponent"],
+                _admin_admin_component__WEBPACK_IMPORTED_MODULE_10__["AdminComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+                _accounts_signup_signup_component__WEBPACK_IMPORTED_MODULE_12__["SignupComponent"],
+                _accounts_signin_signin_component__WEBPACK_IMPORTED_MODULE_13__["SigninComponent"],
+                _auth_redirect_auth_redirect_component__WEBPACK_IMPORTED_MODULE_14__["AuthRedirectComponent"],
+                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__["DashboardComponent"],
+                _dashboard_trip_history_trip_history_component__WEBPACK_IMPORTED_MODULE_17__["TripHistoryComponent"],
+                _dashboard_map_map_component__WEBPACK_IMPORTED_MODULE_18__["MapComponent"],
+                _dashboard_message_message_component__WEBPACK_IMPORTED_MODULE_19__["MessageComponent"],
+                _dashboard_transactions_transactions_component__WEBPACK_IMPORTED_MODULE_20__["TransactionsComponent"],
+                _dashboard_orders_orders_component__WEBPACK_IMPORTED_MODULE_21__["OrdersComponent"],
+                _dashboard_about_about_component__WEBPACK_IMPORTED_MODULE_22__["AboutComponent"],
+                _dashboard_help_help_component__WEBPACK_IMPORTED_MODULE_23__["HelpComponent"],
+                _dashboard_new_request_new_request_component__WEBPACK_IMPORTED_MODULE_24__["NewRequestComponent"],
+                _test_test_component__WEBPACK_IMPORTED_MODULE_25__["TestComponent"],
+                _dashboard_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_26__["NavbarComponent"],
+                _dashboard_footer_footer_component__WEBPACK_IMPORTED_MODULE_27__["FooterComponent"],
+                _dashboard_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_28__["SidebarComponent"],
+                _dashboard_content_content_component__WEBPACK_IMPORTED_MODULE_29__["ContentComponent"],
+                _home_about_page_about_page_component__WEBPACK_IMPORTED_MODULE_30__["AboutPageComponent"],
+                _home_cargo_owner_cargo_owner_component__WEBPACK_IMPORTED_MODULE_31__["CargoOwnerComponent"],
+                _home_transporters_transporters_component__WEBPACK_IMPORTED_MODULE_32__["TransportersComponent"],
+                _home_contact_contact_component__WEBPACK_IMPORTED_MODULE_33__["ContactComponent"],
+                _home_faqs_faqs_component__WEBPACK_IMPORTED_MODULE_34__["FaqsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
                 angularfire2__WEBPACK_IMPORTED_MODULE_4__["AngularFireModule"].initializeApp(_environments_environment_prod__WEBPACK_IMPORTED_MODULE_3__["firebaseConfig"]),
                 angularfire2_database__WEBPACK_IMPORTED_MODULE_5__["AngularFireDatabaseModule"],
-                _agm_core__WEBPACK_IMPORTED_MODULE_14__["AgmCoreModule"].forRoot({
+                _agm_core__WEBPACK_IMPORTED_MODULE_15__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyAGJoBJZgUh7iOZsgZykt5HckOGkH9UQ2Q'
                 })
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -714,9 +995,8 @@ module.exports = "<div id=\"nav-bar-wrap\" class=\"col-md- nav-col\">\r\n<nav cl
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthRedirectComponent", function() { return AuthRedirectComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../environments/environment.prod */ "./src/environments/environment.prod.ts");
-/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
-/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_1__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -726,7 +1006,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
 
 
 var AuthRedirectComponent = /** @class */ (function () {
@@ -747,8 +1026,9 @@ var AuthRedirectComponent = /** @class */ (function () {
     };
     // signout method
     AuthRedirectComponent.prototype.signOut = function () {
-        firebase__WEBPACK_IMPORTED_MODULE_2__["auth"]().signOut().then(function () {
-            window.location.href = "" + _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__["firebaseConfig"].corporateSiteUrl;
+        firebase__WEBPACK_IMPORTED_MODULE_1__["auth"]().signOut().then(function () {
+            // window.location.href = `${firebaseConfig.corporateSiteUrl}`;
+            this.route.navigate(['/']);
         });
     };
     AuthRedirectComponent = __decorate([
@@ -899,7 +1179,7 @@ var ContentComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\n    background-color: rgb(235, 228, 228) !important;\n}\n\n.panel-body {\n    font-size: 30px;\n    font-weight: bold;\n    align-items: center;\n    text-align: center;\n}\n\n.btn {\n    color: black !important;\n    margin-top: 15px;\n    margin-bottom: 20px !important;\n    margin-left: 25px;\n    background-color: white !important;\n    padding-right: 25px !important;\n    padding-left: 25px !important;\n    font-weight: bold !important;\n}\n\n.btn-primary{\n    border-color: white !important;\n\n}"
+module.exports = "body {\n    background-color: rgb(235, 228, 228) !important;\n    margin: 0px !important;\n    padding: 0px !important;\n}\n\n.page-container{\n    margin: 0px !important;\n    padding: 0px !important;   \n}\n\n.container-fluid{\n    margin: 0px !important;\n    padding: 0px !important;\n}\n\n.panel-body {\n    font-size: 30px;\n    font-weight: bold;\n    align-items: center;\n    text-align: center;\n}\n\n.btn {\n    color: black !important;\n    margin-top: 15px;\n    margin-bottom: 20px !important;\n    margin-left: 25px;\n    background-color: white !important;\n    padding-right: 25px !important;\n    padding-left: 25px !important;\n    font-weight: bold !important;\n    font-size: .7rem; \n    line-height: 1;\n    border-radius: 0rem;\n}\n\n.btn-primary{\n    border-color: white !important;\n\n}"
 
 /***/ }),
 
@@ -910,7 +1190,7 @@ module.exports = "body {\n    background-color: rgb(235, 228, 228) !important;\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<!-- Main navbar -->\n<app-navbar></app-navbar>\n<!-- /main navbar -->\n\n<!-- Page container -->\n<div class=\"page-container\">\n  <!-- Page content -->\n  <div class=\"page-content\">\n    <!-- Main sidebar -->\n    <div class=\"sidebar sidebar-main\">\n      <div class=\"sidebar-content\">\n        <!-- User menu -->\n        <div class=\"sidebar-user\">\n          <div class=\"category-content\">\n            <div class=\"media\">\n              <a routerLink=\"#\" class=\"media-left\"><img src=\"assets/images/image.png\"></a>\n              <div class=\"media-body\">\n                <span class=\"media-heading text-semibold\">Victoria Baker</span>\n                <div class=\"text-size-mini text-muted\">\n                  &nbsp;Accra, Ghana\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- /user menu -->\n\n\n        <!-- Main navigation -->\n        <div class=\"sidebar-category sidebar-category-visible\">\n          <div class=\"category-content no-padding\">\n            <ul class=\"navigation navigation-main navigation-accordion\">\n\n              <!-- Main -->\n              <div class=\"text order-button\">\n                <a routerLink=\"/dashboard/new-request\" class=\"btn btn-primary\">New Request</a>\n              </div>\n              <li><a routerLink=\"/dashboard\"><i class=\"icon-home4\"></i> <span>Dashboard</span></a></li>\n              <li><a routerLink=\"/dashboard/trip-history\"><i class=\"icon-stack\"></i> <span>Trip History</span></a></li>\n              <li><a routerLink=\"/dashboard/map\"><i class=\"icon-home4\"></i><span>Map</span></a></li>\n              <li><a routerLink=\"/dashboard/message\"><i class=\"icon-home4\"></i><span>Message</span></a></li>\n              <li class=\"navigation-divider\"></li>\n              <li><a routerLink=\"/dashboard/transactions\"><i class=\"icon-home4\"></i><span>Transactions</span></a></li>\n              <li><a routerLink=\"/dashboard/orders\"><i class=\"icon-home4\"></i><span>Orders</span></a></li>\n              <li><a routerLink=\"/dashboard/about\"><i class=\"icon-home4\"></i><span>About</span></a></li>\n              <li><a routerLink=\"/dashboard/help\"><i class=\"icon-list-unordered\"></i> <span>Help / FAQ</span></a></li>\n              <!-- /main -->\n\n            </ul>\n          </div>\n        </div>\n        <!-- /main navigation -->\n\n      </div>\n    </div>\n    <!-- /main sidebar -->\n\n    <!-- Main content -->\n    <div class=\"content-wrapper\">\n\n      <!-- Content area -->\n      <div class=\"content\">\n\n        <!-- dashboard panel -->\n          <router-outlet></router-outlet>\n        <!-- /dashboard panel -->\n\n        <!-- Footer -->\n        <app-footer></app-footer>\n        <!-- /footer -->\n\n      </div>\n      <!-- /content area -->\n\n    </div>\n    <!-- /main content -->\n\n  </div>\n  <!-- /page content -->\n\n</div>\n<!-- /page container -->"
+module.exports = "<div>\n\n  <!-- Main navbar -->\n  <app-navbar></app-navbar>\n  <!-- /main navbar -->\n  <div class=\"container-fluid\" style=\"background-color: #ebe9e9 !important\">\n    <!-- Page container -->\n    <div class=\"page-container col-md-2\">\n      <!-- Page content -->\n      <div class=\"page-content\">\n        <!-- Main sidebar -->\n        <div class=\"sidebar sidebar-main\">\n          <div class=\"sidebar-content\">\n            <!-- User menu -->\n            <div class=\"sidebar-user\">\n              <div class=\"category-content\">\n                <div class=\"media\">\n                  <a routerLink=\"#\" class=\"media-left\"><img src=\"assets/images/image.png\"></a>\n                  <div class=\"media-body\">\n                    <span class=\"media-heading text-semibold\">Victoria Baker</span>\n                    <div class=\"text-size-mini text-muted\">\n                      &nbsp;Accra, Ghana\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n            <!-- /user menu -->\n\n\n            <!-- Main navigation -->\n            <div class=\"sidebar-category sidebar-category-visible\">\n              <div class=\"category-content no-padding\">\n                <ul class=\"navigation navigation-main navigation-accordion\">\n\n                  <!-- Main -->\n                  <div class=\"text order-button\">\n                    <a routerLink=\"/dashboard/new-request\" class=\"btn btn-primary\">New Request</a>\n                  </div>\n                \n                  <li><a routerLink=\"/dashboard\"><i class=\"icon-home4\"></i> <span>Dashboard</span></a></li>\n                  <li><a routerLink=\"/dashboard/trip-history\"><i class=\"icon-stack\"></i> <span>Trip History</span></a></li>\n                  <li><a routerLink=\"/dashboard/map\"><i class=\"icon-home4\"></i><span>Map</span></a></li>\n                  <li><a routerLink=\"/dashboard/message\"><i class=\"icon-home4\"></i><span>Message</span></a></li>\n                  <li class=\"navigation-divider\"></li>\n                  <li><a routerLink=\"/dashboard/transactions\"><i class=\"icon-home4\"></i><span>Transactions</span></a></li>\n                  <li><a routerLink=\"/dashboard/orders\"><i class=\"icon-home4\"></i><span>Orders</span></a></li>\n                  <li><a routerLink=\"/dashboard/about\"><i class=\"icon-home4\"></i><span>About</span></a></li>\n                  <li><a routerLink=\"/dashboard/help\"><i class=\"icon-list-unordered\"></i> <span>Help / FAQ</span></a></li>\n                  <!-- /main -->\n\n                </ul>\n              </div>\n            </div>\n            <!-- /main navigation -->\n\n          </div>\n        </div>\n        <!-- /main sidebar -->\n\n      </div>\n      <!-- /page content -->\n\n    </div>\n    <!-- /page container -->\n\n    <!-- Main content -->\n    <div class=\"page-container col-md-8\">\n\n      <!-- Content area -->\n      <div class=\"page-content\">\n\n        <!-- dashboard panel -->\n        <router-outlet></router-outlet>\n        <!-- /dashboard panel -->\n      </div>\n      <!-- /content area -->\n      <div class=\"footer-copyright col-md-12\">\n        <!-- Footer -->\n        <app-footer></app-footer>\n        <!-- /footer -->\n      </div>\n    </div>\n    <!-- /main content -->\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -1099,7 +1379,7 @@ module.exports = "body {\n    background-color: rgb(235, 228, 228) !important;\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<!-- Simple panel -->\n<div>\n  <!-- this creates a google map on the page with the given lat/lng from -->\n  <!-- the component as the initial center of the map: -->\n  <agm-map [latitude]=\"lat\" [longitude]=\"lng\">\n    <agm-marker [latitude]=\"currLat\" [longitude]=\"currLong\"></agm-marker>\n  </agm-map>\n</div>\n<!-- /simple panel -->\n"
+module.exports = "<!-- <div class=\"content\">\n  <div class=\"col-md-12 panel panel-flat\"> -->\n\n    <!-- Simple panel -->\n    <!-- <div> -->\n      <!-- this creates a google map on the page with the given lat/lng from -->\n      <!-- the component as the initial center of the map: -->\n      <!-- <agm-map [latitude]=\"lat\" [longitude]=\"lng\">\n        <agm-marker [latitude]=\"currLat\" [longitude]=\"currLong\"></agm-marker>\n      </agm-map>\n    </div> -->\n    <!-- /simple panel -->\n  <!-- </div>\n</div> -->\n\n<div #mapContainer style=\"height: 400px;width: 100%;border: 5px solid gray\"></div>"
 
 /***/ }),
 
@@ -1114,6 +1394,8 @@ module.exports = "\n<!-- Simple panel -->\n<div>\n  <!-- this creates a google m
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapComponent", function() { return MapComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+// import { Component, OnInit } from '@angular/core';
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1123,24 +1405,116 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+// @Component({
+//   selector: 'app-map',
+//   templateUrl: './map.component.html',
+//   styleUrls: ['./map.component.css']
+// })
+// export class MapComponent implements OnInit {
+//   title = 'My first AGM project';
+//   lat = 6.2235263;
+//   lng = -0.5892302;
+//   currLat = 5.645922;
+//   currLong = -0.160008;
+//   constructor() { }
+//   ngOnInit() {
+//   }
+// }
 
+
+var CronJob = __webpack_require__(/*! cron */ "./node_modules/cron/lib/cron.js").CronJob;
 var MapComponent = /** @class */ (function () {
-    function MapComponent() {
-        this.title = 'My first AGM project';
-        this.lat = 6.2235263;
-        this.lng = -0.5892302;
-        this.currLat = 5.645922;
-        this.currLong = -0.160008;
+    function MapComponent(http) {
+        this.http = http;
+        this.loginEndPoint = 'http://api.amber360.com/api/user/login';
+        this.deviceListEndPoint = 'http://api.amber360.com/api/device/listdevice';
+        this.coordinatesEndPoint = 'http://api.amber360.com/api/location/tracking';
+        this.httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
     }
     MapComponent.prototype.ngOnInit = function () {
+        this.initializeMap();
+        this.loginAmber();
+        localStorage.setItem('locations', JSON.stringify([]));
+        this.runCron();
     };
+    MapComponent.prototype.getDeviceList = function (userID, accessToken) {
+        var _this = this;
+        var body = "{\"id\":\"" + userID + "\", \"type\":\"0\", \"pageNo\":\"1\", \"pageCount\":\"100\", \"loginType\":\"0\", \"mapType\":\"google\",\n    \"lastTime\":\"2017-01-09T12:01:05.9776787 08:00\", \"token\":\"" + accessToken + "\", \"language\":\"en-us\", \"appId\":\"6\"}";
+        this.http.post(this.deviceListEndPoint, body, this.httpOptions)
+            .subscribe(function (response) {
+            _this.deviceID = response['Items'][8]['Id'];
+            _this.getCoordinates(_this.deviceID, _this.accessToken);
+        });
+    };
+    MapComponent.prototype.getCoordinates = function (deviceID, accessToken) {
+        var _this = this;
+        var body = "{\"deviceId\":\"" + deviceID + "\", \"mapType\":\"google\", \"token\":\"" + accessToken + "\", \"language\":\"en-us\", \"appId\":\"6\"}";
+        this.http.post(this.coordinatesEndPoint, body, this.httpOptions)
+            .subscribe(function (response) {
+            _this.lat = response['Item']['Latitude'];
+            _this.lng = response['Item']['Longitude'];
+            _this.plotRoute();
+            //  insert into firebase
+        });
+    };
+    MapComponent.prototype.initializeMap = function () {
+        this.directionsService = new google.maps.DirectionsService();
+        this.directionsDisplay = new google.maps.DirectionsRenderer();
+        var accra = new google.maps.LatLng(5.6037, -0.180);
+        var mapProp = {
+            center: accra,
+            zoom: 14
+        };
+        this.map = new google.maps.Map(this.mapContainer.nativeElement, mapProp);
+        this.directionsDisplay.setMap(this.map);
+    };
+    MapComponent.prototype.plotRoute = function () {
+        var _this = this;
+        var startingPoint = new google.maps.LatLng(5.5480, -0.1927);
+        var currentLocation = new google.maps.LatLng(this.lat, this.lng);
+        var requestOption = {
+            origin: startingPoint,
+            destination: currentLocation,
+            travelMode: 'DRIVING'
+        };
+        this.directionsService.route(requestOption, function (response, status) {
+            if (status === 'OK') {
+                _this.directionsDisplay.setDirections(response);
+            }
+        });
+    };
+    MapComponent.prototype.loginAmber = function () {
+        var _this = this;
+        var body = '{"name":"Adam123", "pass":"Muhideen@1adam", "appId":"6", "language":"en-us","loginType":"0"}';
+        this.http.post(this.loginEndPoint, body, this.httpOptions)
+            .subscribe(function (response) {
+            _this.accessToken = response['AccessToken'];
+            _this.userID = response['Item']['UserId'];
+            _this.getDeviceList(_this.userID, _this.accessToken);
+        });
+    };
+    MapComponent.prototype.runCron = function () {
+        var _this = this;
+        var cron = new CronJob('15 * * * * *', function () {
+            _this.getCoordinates(_this.deviceID, _this.accessToken);
+            console.log('Location updated...');
+        }, null, true, 'America/Los_Angeles');
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('mapContainer'),
+        __metadata("design:type", Object)
+    ], MapComponent.prototype, "mapContainer", void 0);
     MapComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-map',
+            selector: 'app-root',
             template: __webpack_require__(/*! ./map.component.html */ "./src/app/dashboard/map/map.component.html"),
             styles: [__webpack_require__(/*! ./map.component.css */ "./src/app/dashboard/map/map.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], MapComponent);
     return MapComponent;
 }());
@@ -1219,7 +1593,7 @@ var MessageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".navbar {\n    background-color: #F8F5F5 !important;\n}\n.navbar-brand img {\n    width: 180px !important;\n}\n.navbar-inverse .navbar-header{\n    flex: 1 !important;\n}\n.dropdown-toggle{\n    color: black !important;\n}"
+module.exports = ".navbar {\n    background-color: black !important;\n    padding: 0 !important;\n    margin-bottom: 0 !important;\n    border-radius: 0;\n    border: none transparent;\n    \n}\n.navbar-brand img {\n    width: 230px !important;\n    padding-left: 35px;\n    padding-top: 8px;\n}\n.navbar-inverse .navbar-header{\n    flex: 1 !important;\n}\n.dropdown-toggle{\n    color: white !important;\n}\n"
 
 /***/ }),
 
@@ -1230,7 +1604,7 @@ module.exports = ".navbar {\n    background-color: #F8F5F5 !important;\n}\n.navb
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navbar navbar-inverse\">\n  <div class=\"navbar-header\">\n    <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/img/truckrLogoBlack.png\" alt=\"\"></a>\n  </div>\n\n  <div class=\"navbar-collapse collapse\" id=\"navbar-mobile\">\n    <ul class=\"nav navbar-nav navbar-right\">\n      <li class=\"dropdown dropdown-user\">\n        <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n          <!-- <img src=\"assets/images/image.png\" alt=\"\"> -->\n          <span>Hi Victoria</span>\n        </a>\n        <ul class=\"dropdown-menu dropdown-menu-right\">\n          <li><a href=\"#\"><i class=\"icon-user-plus\"></i> My profile</a></li>\n          <li><a href=\"#\"><i class=\"icon-coins\"></i> My balance</a></li>\n          <li><a href=\"#\"><span class=\"badge badge-warning pull-right\">58</span> <i class=\"icon-comment-discussion\"></i> Messages</a></li>\n          <li class=\"divider\"></li>\n          <li><a href=\"#\"><i class=\"icon-cog5\"></i> Account settings</a></li>\n          <li><a href=\"#\"><i class=\"icon-switch2\"></i> Logout</a></li>\n        </ul>\n      </li>\n    </ul>\n  </div>\n</div>"
+module.exports = "<div class=\"navbar navbar-inverse\">\n  <div class=\"navbar-header\">\n    <a class=\"navbar-brand\" href=\"/dashboard\"><img src=\"assets/frontend/img/img/truckrFooterLogo.png\" alt=\"Logo Image\"></a>\n  </div>\n\n  <div class=\"navbar-collapse collapse\" id=\"navbar\">\n    <ul class=\"nav navbar-right\">\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle text-white\" data-toggle=\"dropdown\">\n          <!-- <img src=\"assets/images/image.png\" alt=\"\"> -->\n          <span>Hi Victoria</span>\n        </a>\n        <div class=\"dropdown-menu\">\n          <li><a href=\"#\"><i class=\"icon-user-plus\"></i> My profile</a></li>\n          <li><a href=\"#\"><i class=\"icon-coins\"></i> My balance</a></li>\n          <li><a href=\"#\"><span class=\"badge badge-warning pull-right\">58</span> <i class=\"icon-comment-discussion\"></i> Messages</a></li>\n          <li class=\"divider\"></li>\n          <li><a href=\"#\"><i class=\"icon-cog5\"></i> Account settings</a></li>\n          <li><a href=\"#\"><i class=\"icon-switch2\"></i> Logout</a></li>\n        </div>\n      </li>\n    </ul>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1282,7 +1656,7 @@ var NavbarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\n    background-color: rgb(235, 228, 228) !important;\n}\n\n.navbar {\n    background-color: #FDFAFA !important;\n}\n\n.navbar-brand img {\n    width: 180px !important;\n}\n\n.navbar-inverse .navbar-header{\n    flex: 1 !important;\n}\n\n.dropdown-toggle{\n    color: black !important;\n}\n\n.panel-body {\n    font-size: 30px;\n    font-weight: bold;\n    align-items: center;\n    text-align: center;\n}\n\n.btn {\n    color: black !important;\n    margin-top: 15px;\n    margin-bottom: 20px !important;\n    margin-left: 25px;\n    background-color: white !important;\n    padding-right: 25px !important;\n    padding-left: 25px !important;\n    font-weight: bold !important;\n}\n\n.btn-primary{\n    border-color: white !important;\n\n}\n\nagm-map {\n  height: 500px;\n}"
+module.exports = "body {\n    background-color: rgb(235, 228, 228) !important;\n}\n\n.navbar {\n    background-color: #FDFAFA !important;\n}\n\n.navbar-brand img {\n    width: 180px !important;\n}\n\n.navbar-inverse .navbar-header{\n    flex: 1 !important;\n}\n\n.dropdown-toggle{\n    color: black !important;\n}\n\n.row {\n    padding-top: 13px;\n}\n\n.h2, h2 {\n    font-size: .9rem !important;\n}\n\nlabel {\n    display: inline-block;\n    font-size: .7rem !important;\n    font-weight: 400;\n}\n\n.panel-body {\n    font-size: 25px;\n    font-weight: bold;\n    align-items: center;\n    text-align: center;\n}\n\n.btn {\n    color: black !important;\n    margin-top: 15px;\n    margin-bottom: 20px !important;\n    margin-left: 25px;\n    background-color: white !important;\n    padding-right: 25px !important;\n    padding-left: 25px !important;\n    font-weight: bold !important;\n}\n\n.btn-primary{\n    border-color: white !important;\n\n}\n\nagm-map {\n  height: 500px;\n}"
 
 /***/ }),
 
@@ -1293,7 +1667,7 @@ module.exports = "body {\n    background-color: rgb(235, 228, 228) !important;\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<div class=\"col-md-8 panel panel-flat\">\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-3\">\n    <h2>Load Details</h2>\n    <form role=\"form\" id=\"reused_form\">\n      <div class=\"row\">\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Type Of Commodity:</label>\n          <input [(ngModel)]=\"commodityType\" name=\"commodity type\" type=\"text\" class=\"form-control\" id=\"commodity-type\" maxlength=\"50\">\n        </div>\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Weight Of Commodity:</label>\n          <input [(ngModel)]=\"comodityWeight\" name=\"commodity weight\" type=\"text\" class=\"form-control\" id=\"commodity-weight\" maxlength=\"50\">\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Vehicle Type:</label>\n          <div class=\"form-group\">\n            <select [(ngModel)]=\"vehicleType\" name=\"vehicle type\" class=\"col-lg-12 bootstrap-select show-tick\" data-width=\"100%\">\n              <option>flatbed truck</option>\n              <option>van</option>\n              <option>pick up truck</option>\n            </select>\n          </div>\n        </div>\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Value Of Commodity:</label>\n          <input [(ngModel)]=\"comodityValue\" type=\"number\" class=\"form-control\" id=\"price\" name=\"commodity-value\" maxlength=\"50\">\n        </div>\n      </div>\n      <h2>Pick Up Details</h2>\n      <div class=\"row\">\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Pick Up Date:</label>\n          <input [(ngModel)]=\"pickupDate\" type=\"date\" class=\"form-control\" id=\"pickup-date\" name=\"pickup-date\" maxlength=\"50\">\n        </div>\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Pick Up Location:</label>\n          <div class=\"form-group\">\n            <select [(ngModel)]=\"pickupLocation\" name=\"address\" class=\"col-lg-12 bootstrap-select show-tick\" data-width=\"100%\">\n              <option>Tema</option>\n              <option>Kumasi</option>\n              <option>Tamale</option>\n              <option>Accra</option>\n            </select>\n          </div>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Contacts Name:</label>\n          <input [(ngModel)]=\"contactsName\" type=\"text\" class=\"form-control\" id=\"email\" name=\"email\" maxlength=\"50\">\n        </div>\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Contacts Phone Number:</label>\n          <input [(ngModel)]=\"contactsNumber\" type=\"tel\" class=\"form-control\" id=\"phone\" name=\"phone\" required maxlength=\"50\">\n        </div>\n      </div>\n      <h2>Drop Off Details</h2>\n      <div class=\"row\">\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Receiver's Name:</label>\n          <input [(ngModel)]=\"receiverName\" type=\"text\" class=\"form-control\" id=\"name\" name=\"name\" maxlength=\"50\">\n        </div>\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Receiver's Phone Number:</label>\n          <input [(ngModel)]=\"receiverNumber\" type=\"tel\" class=\"form-control\" id=\"phone\" name=\"phone\" required maxlength=\"50\">\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Drop Off Location:</label>\n          <div class=\"form-group\">\n            <select [(ngModel)]=\"dropoffLocation\" name=\"dropoff-address\" class=\"col-lg-12 bootstrap-select show-tick\" data-width=\"100%\">\n              <option>Tema</option>\n              <option>Kumasi</option>\n              <option>Tamale</option>\n              <option>Accra</option>\n            </select>\n          </div>\n        </div>\n        <div class=\"col-sm-6 form-group\">\n          <label>\n              Special Instructions:</label>\n          <textarea [(ngModel)]=\"info\"class=\"form-control\" type=\"textarea\" id=\"message\" name=\"message\" placeholder=\"Your Message Here\" maxlength=\"4000\"\n          rows=\"3\"></textarea>\n        </div>\n      </div>\n      <div class=\"row\">\n      <div class=\"col-sm-6 form-group\">\n        <label class=\"display-block text-semibold\">Are you interested in cargo insurance</label>\n        <label class=\"checkbox-inline\">\n          <input type=\"checkbox\" class=\"styled\" checked=\"checked\">\n          Yes\n        </label>\n        <label class=\"checkbox-inline\">\n          <input type=\"checkbox\" class=\"styled\">\n          No\n        </label>\n      </div>\n        <div class=\"col-sm-6 form-group\">\n          <button (click)=\"bookTruck()\" type=\"submit\" class=\"btn btn-lg btn-success btn-block\" id=\"btnContactUs\">Book Truck </button>\n        </div>\n      </div>\n\n    </form>\n  </div>\n</div>\n</div>"
+module.exports = "\n<div class=\"content\">\n  <div class=\"col-md-10 panel panel-flat\">\n    <div class=\"row\">\n      <div class=\"col-md-8 col-md-offset-2\">\n        <h2>Load Details</h2>\n        <form role=\"form\" id=\"reused_form\">\n          <div class=\"row\">\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Type Of Commodity:</label>\n              <input [(ngModel)]=\"commodityType\" name=\"commodity type\" type=\"text\" class=\"form-control\" id=\"commodity-type\" maxlength=\"50\">\n            </div>\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Weight Of Commodity:</label>\n              <input [(ngModel)]=\"comodityWeight\" name=\"commodity weight\" type=\"text\" class=\"form-control\" id=\"commodity-weight\" maxlength=\"50\">\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Vehicle Type:</label>\n              <div class=\"form-group\">\n                <select [(ngModel)]=\"vehicleType\" name=\"vehicle type\" class=\"col-lg-12 bootstrap-select show-tick\" data-width=\"100%\">\n                  <option>flatbed truck</option>\n                  <option>van</option>\n                  <option>pick up truck</option>\n                </select>\n              </div>\n            </div>\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Value Of Commodity:</label>\n              <input [(ngModel)]=\"comodityValue\" type=\"number\" class=\"form-control\" id=\"price\" name=\"commodity-value\" maxlength=\"50\">\n            </div>\n          </div>\n          <h2>Pick Up Details</h2>\n          <div class=\"row\">\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Pick Up Date:</label>\n              <input [(ngModel)]=\"pickupDate\" type=\"date\" class=\"form-control\" id=\"pickup-date\" name=\"pickup-date\" maxlength=\"50\">\n            </div>\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Pick Up Location:</label>\n              <div class=\"form-group\">\n                <select [(ngModel)]=\"pickupLocation\" name=\"address\" class=\"col-lg-12 bootstrap-select show-tick\" data-width=\"100%\">\n                  <option>Tema</option>\n                  <option>Kumasi</option>\n                  <option>Tamale</option>\n                  <option>Accra</option>\n                </select>\n              </div>\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Contacts Name:</label>\n              <input [(ngModel)]=\"contactsName\" type=\"text\" class=\"form-control\" id=\"email\" name=\"email\" maxlength=\"50\">\n            </div>\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Contacts Phone Number:</label>\n              <input [(ngModel)]=\"contactsNumber\" type=\"tel\" class=\"form-control\" id=\"phone\" name=\"phone\" required maxlength=\"50\">\n            </div>\n          </div>\n          <h2>Drop Off Details</h2>\n          <div class=\"row\">\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Receiver's Name:</label>\n              <input [(ngModel)]=\"receiverName\" type=\"text\" class=\"form-control\" id=\"name\" name=\"name\" maxlength=\"50\">\n            </div>\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Receiver's Phone Number:</label>\n              <input [(ngModel)]=\"receiverNumber\" type=\"tel\" class=\"form-control\" id=\"phone\" name=\"phone\" required maxlength=\"50\">\n            </div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Drop Off Location:</label>\n              <div class=\"form-group\">\n                <select [(ngModel)]=\"dropoffLocation\" name=\"dropoff-address\" class=\"col-lg-12 bootstrap-select show-tick\" data-width=\"100%\">\n                  <option>Tema</option>\n                  <option>Kumasi</option>\n                  <option>Tamale</option>\n                  <option>Accra</option>\n                </select>\n              </div>\n            </div>\n            <div class=\"col-sm-6 form-group\">\n              <label>\n                  Special Instructions:</label>\n              <textarea [(ngModel)]=\"info\"class=\"form-control\" type=\"textarea\" id=\"message\" name=\"message\" placeholder=\"Your Message Here\" maxlength=\"4000\"\n              rows=\"3\"></textarea>\n            </div>\n          </div>\n          <div class=\"row\">\n          <div class=\"col-sm-6 form-group\">\n            <label class=\"display-block text-semibold\">Are you interested in cargo insurance</label>\n              <label class=\"checkbox-inline\">\n                <input type=\"checkbox\" class=\"styled\" checked=\"checked\">\n                Yes\n              </label>\n              <label class=\"checkbox-inline\">\n                <input type=\"checkbox\" class=\"styled\">\n                No\n              </label>\n          </div>\n            <div class=\"col-sm-6 form-group\">\n              <button id=\"payStackButton\" style=\"display:none;\" onclick=\"payWithPayStack('nwosuchiamaka@gmail.com', '5000')\"></button>\n              <button (click)='bookTruck()' type=\"submit\" class=\"btn btn-lg btn-success btn-block\" id=\"btnContactUs\">Book Truck </button>\n      \n            </div>\n          </div>\n\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1326,11 +1700,13 @@ var NewRequestComponent = /** @class */ (function () {
     function NewRequestComponent(db, router) {
         this.db = db;
         this.router = router;
+        this.info = 'Ha';
     }
     NewRequestComponent.prototype.ngOnInit = function () {
+        this.button = document.getElementById('payStackButton');
     };
     NewRequestComponent.prototype.bookTruck = function () {
-        var promise = this.db.list('user/cargo owner/').push({
+        var promiseOp = this.db.list('user/cargo owner/').push({
             'commodityType': this.commodityType,
             'comodityWeight': this.comodityWeight,
             'comodityValue': this.comodityValue,
@@ -1344,7 +1720,8 @@ var NewRequestComponent = /** @class */ (function () {
             'dropoffLocation': this.dropoffLocation,
             'info': this.info
         });
-        this.router.navigate(['map']);
+        promiseOp.then(function (response) { return console.log(response); });
+        this.button.click();
     };
     NewRequestComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -2148,14 +2525,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "firebaseConfig", function() { return firebaseConfig; });
 // config = require('../../config/config.json');
 var environment = {
-    production: true,
-    apiKey: 'AIzaSyBt_vL5iC2hLK9Ss5kc8Uqh9wZyN8rwOrg',
-    authDomain: 'truckrtech.firebaseapp.com',
-    databaseURL: 'https://truckrtech.firebaseio.com',
-    storageBucket: 'truckrtech.appspot.com',
-    messagingSenderId: '713985223854',
-    projectId: 'truckrtech',
-    corporateSiteUrl: 'http://www.truckrtech.com'
+    production: true
 };
 var firebaseConfig = {
     apiKey: 'AIzaSyBt_vL5iC2hLK9Ss5kc8Uqh9wZyN8rwOrg',
@@ -2183,14 +2553,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "firebaseConfig", function() { return firebaseConfig; });
 // const config = require('../../config/config.json');
 var environment = {
-    production: false,
-    apiKey: 'AIzaSyBt_vL5iC2hLK9Ss5kc8Uqh9wZyN8rwOrg',
-    authDomain: 'truckrtech.firebaseapp.com',
-    databaseURL: 'https://truckrtech.firebaseio.com',
-    storageBucket: 'truckrtech.appspot.com',
-    messagingSenderId: '713985223854',
-    projectId: 'truckrtech',
-    corporateSiteUrl: 'http://localhost:4200'
+    production: false
+    // apiKey: config.apiKey,
+    // authDomain: config.authDomain,
+    // databaseURL: config.databaseURL,
+    // storageBucket: config.storageBucket,
+    // messagingSenderId: config.messagingSenderId,
+    // projectId: config.projectId,
+    // corporateSiteUrl: 'http://localhost:4200'
 };
 var firebaseConfig = {
     apiKey: 'AIzaSyBt_vL5iC2hLK9Ss5kc8Uqh9wZyN8rwOrg',
@@ -2198,8 +2568,7 @@ var firebaseConfig = {
     databaseURL: 'https://truckrtech.firebaseio.com',
     projectId: 'truckrtech',
     storageBucket: 'truckrtech.appspot.com',
-    messagingSenderId: '713985223854',
-    corporateSiteUrl: 'http://localhost:4200'
+    messagingSenderId: '713985223854'
 };
 /*
  * In development mode, to ignore zone related error stack frames such as

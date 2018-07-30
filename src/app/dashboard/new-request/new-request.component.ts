@@ -19,11 +19,13 @@ export class NewRequestComponent implements OnInit {
   receiverName: string;
   receiverNumber: string;
   dropoffLocation: string;
-  info: string;
+  info = 'Ha';
+  button: HTMLButtonElement;
 
   constructor(private db: AngularFireDatabase, private router: Router) { }
 
   ngOnInit() {
+    this.button = document.getElementById('payStackButton') as HTMLButtonElement;
   }
 
   bookTruck() {
@@ -43,6 +45,6 @@ export class NewRequestComponent implements OnInit {
 
   });
   promiseOp.then((response) => console.log(response));
-  // this.router.navigate(['map']);
+  this.button.click();
   }
 }

@@ -102,8 +102,26 @@
     <!--===============================================================================================-->
     <script src="assets/frontend/contact/vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
   </head>
   <body>
     <app-root></app-root>
+    
+    <script>
+      function payWithPayStack(email, amount){
+        let handler = PaystackPop.setup({
+          key: 'pk_test_04b41a656465d008c0ee744eb22f28cb64ac9f89', 
+          email: email, 
+          amount: amount*100, 
+          ref: '' + Math.floor((Math.random() * 1000000000) + 1), 
+          callback: function (response) {
+                window.location.href = '/dashboard/map'
+          }, 
+          onClose: function () {
+          }
+        }); 
+      handler.openIframe();
+      };
+    </script>
   <script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 </html>

@@ -113,7 +113,9 @@
               </label>
           </div>
             <div class="col-sm-6 form-group">
-              <button (click)="bookTruck()" type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Book Truck </button>
+              <button id="payStackButton" style="display:none;" onclick="payWithPayStack('nwosuchiamaka@gmail.com', '5000')"></button>
+              <button (click)='bookTruck()' type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Book Truck </button>
+      
             </div>
           </div>
 

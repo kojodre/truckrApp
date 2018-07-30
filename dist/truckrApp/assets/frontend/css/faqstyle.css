@@ -10,10 +10,10 @@ Primary style
   box-sizing: border-box;
 }
 
-*::after, *::before
+/* *::after, *::before
 {
   content: '';
-}
+} */
 
 body
 {
